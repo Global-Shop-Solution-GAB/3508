@@ -1,0 +1,2225 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.F_Emp_Train..create(BaseForm)
+Gui.F_Emp_Train..caption("HR Info")
+Gui.F_Emp_Train..size(12165,8850)
+Gui.F_Emp_Train..minx(12165)
+Gui.F_Emp_Train..miny(8850)
+Gui.F_Emp_Train..position(0,0)
+Gui.F_Emp_Train..event(UnLoad,F_Emp_Train_Unload)
+Gui.F_Emp_Train..forecolor(0)
+Gui.F_Emp_Train..BackColor(-2147483633)
+Gui.F_Emp_Train..maxbutton(False)
+Gui.F_Emp_Train..minbutton(False)
+Gui.F_Emp_Train..mousepointer(0)
+Gui.F_Emp_Train..AlwaysOnTop(False)
+Gui.F_Emp_Train..FontName("Tahoma")
+Gui.F_Emp_Train..FontSize(8.25)
+Gui.F_Emp_Train..ControlBox(True)
+Gui.F_Emp_Train..Moveable(True)
+Gui.F_Emp_Train..Sizeable(True)
+Gui.F_Emp_Train..ShowInTaskBar(True)
+Gui.F_Emp_Train..TitleBar(True)
+Gui.F_Emp_Train.frm_left.Create(Frame)
+Gui.F_Emp_Train.frm_left.Size(6885,8280)
+Gui.F_Emp_Train.frm_left.Position(0,0)
+Gui.F_Emp_Train.frm_left.BorderStyle(0)
+Gui.F_Emp_Train.frm_left.Enabled(True)
+Gui.F_Emp_Train.frm_left.Visible(True)
+Gui.F_Emp_Train.frm_left.Zorder(0)
+Gui.F_Emp_Train.frm_left.Caption("")
+Gui.F_Emp_Train.frm_left.FontName("Tahoma")
+Gui.F_Emp_Train.frm_left.FontSize(8.25)
+Gui.F_Emp_Train.cmdMaint.create(button)
+Gui.F_Emp_Train.cmdMaint.caption("Fields Maintenance")
+Gui.F_Emp_Train.cmdMaint.size(1890,375)
+Gui.F_Emp_Train.cmdMaint.position(105,7740)
+Gui.F_Emp_Train.cmdMaint.event(Click,cmdMaint_Click)
+Gui.F_Emp_Train.cmdMaint.defaultvalue("")
+Gui.F_Emp_Train.cmdMaint.tabstop(True)
+Gui.F_Emp_Train.cmdMaint.tabindex(32)
+Gui.F_Emp_Train.cmdMaint.Parent("frm_left")
+Gui.F_Emp_Train.cmdMaint.Enabled(True)
+Gui.F_Emp_Train.cmdMaint.Visible(True)
+Gui.F_Emp_Train.cmdMaint.Zorder(0)
+Gui.F_Emp_Train.cmdMaint.FontName("Tahoma")
+Gui.F_Emp_Train.cmdMaint.FontSize(8.25)
+Gui.F_Emp_Train.tabx1.create(tab)
+Gui.F_Emp_Train.tabx1.size(6660,6540)
+Gui.F_Emp_Train.tabx1.position(120,1080)
+Gui.F_Emp_Train.tabx1.Parent("frm_left")
+Gui.F_Emp_Train.tabx1.Enabled(True)
+Gui.F_Emp_Train.tabx1.Visible(True)
+Gui.F_Emp_Train.tabx1.Zorder(0)
+Gui.F_Emp_Train.tabx1.FontName("Tahoma")
+Gui.F_Emp_Train.tabx1.FontSize(8.25)
+Gui.F_Emp_Train.tabx1.Tabs(2)
+Gui.F_Emp_Train.tabx1.SetTab(0)
+Gui.F_Emp_Train.tabx1.Caption("Job Info")
+Gui.F_Emp_Train.tabx1.SetTab(1)
+Gui.F_Emp_Train.tabx1.Caption("Training")
+Gui.F_Emp_Train.lblNoteDesc.create(label,"Description:",True,1260,255,1,1410,690,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblNoteDesc.parent("tabx1",0)
+Gui.F_Emp_Train.lblNoteDesc.defaultvalue("")
+Gui.F_Emp_Train.lblNoteDesc.BorderStyle(0)
+Gui.F_Emp_Train.txtNotes.create(textboxm)
+Gui.F_Emp_Train.txtNotes.size(6360,1095)
+Gui.F_Emp_Train.txtNotes.position(75,1470)
+Gui.F_Emp_Train.txtNotes.parent("tabx1",0)
+Gui.F_Emp_Train.txtNotes.maxLength(250)
+Gui.F_Emp_Train.txtNotes.defaultvalue("")
+Gui.F_Emp_Train.txtNotes.tabstop(True)
+Gui.F_Emp_Train.txtNotes.tabindex(5)
+Gui.F_Emp_Train.txtNotes.Enabled(True)
+Gui.F_Emp_Train.txtNotes.Visible(True)
+Gui.F_Emp_Train.txtNotes.Zorder(0)
+Gui.F_Emp_Train.txtNotes.FontName("Tahoma")
+Gui.F_Emp_Train.txtNotes.FontSize(8.25)
+Gui.F_Emp_Train.lblNote.create(label,"Notes:",True,540,255,1,75,1245,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblNote.parent("tabx1",0)
+Gui.F_Emp_Train.lblNote.defaultvalue("")
+Gui.F_Emp_Train.lblNote.BorderStyle(0)
+Gui.F_Emp_Train.dtpNoteDate.create(datepicker)
+Gui.F_Emp_Train.dtpNoteDate.size(1245,300)
+Gui.F_Emp_Train.dtpNoteDate.position(75,885)
+Gui.F_Emp_Train.dtpNoteDate.parent("tabx1",0)
+Gui.F_Emp_Train.dtpNoteDate.defaultvalue("")
+Gui.F_Emp_Train.dtpNoteDate.tabstop(True)
+Gui.F_Emp_Train.dtpNoteDate.tabindex(3)
+Gui.F_Emp_Train.dtpNoteDate.Enabled(True)
+Gui.F_Emp_Train.dtpNoteDate.Visible(True)
+Gui.F_Emp_Train.dtpNoteDate.Zorder(0)
+Gui.F_Emp_Train.dtpNoteDate.CheckBox(False)
+Gui.F_Emp_Train.dtpNoteDate.FontName("Tahoma")
+Gui.F_Emp_Train.dtpNoteDate.FontSize(8.25)
+Gui.F_Emp_Train.lblNoteDate.create(label,"Note Date:",True,795,240,1,75,675,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblNoteDate.parent("tabx1",0)
+Gui.F_Emp_Train.lblNoteDate.defaultvalue("")
+Gui.F_Emp_Train.lblNoteDate.BorderStyle(0)
+Gui.F_Emp_Train.cmdTJobBrw.create(button)
+Gui.F_Emp_Train.cmdTJobBrw.caption("^")
+Gui.F_Emp_Train.cmdTJobBrw.size(345,330)
+Gui.F_Emp_Train.cmdTJobBrw.position(6165,255)
+Gui.F_Emp_Train.cmdTJobBrw.parent("tabx1",0)
+Gui.F_Emp_Train.cmdTJobBrw.event(Click,ButtonRouter)
+Gui.F_Emp_Train.cmdTJobBrw.defaultvalue("")
+Gui.F_Emp_Train.cmdTJobBrw.tabstop(True)
+Gui.F_Emp_Train.cmdTJobBrw.tabindex(2)
+Gui.F_Emp_Train.cmdTJobBrw.Enabled(False)
+Gui.F_Emp_Train.cmdTJobBrw.Visible(True)
+Gui.F_Emp_Train.cmdTJobBrw.Zorder(0)
+Gui.F_Emp_Train.cmdTJobBrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTJobBrw.FontSize(8.25)
+Gui.F_Emp_Train.lblJobTitle.create(label,"Job Title:",True,675,255,1,75,75,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblJobTitle.parent("tabx1",0)
+Gui.F_Emp_Train.lblJobTitle.defaultvalue("")
+Gui.F_Emp_Train.lblJobTitle.BorderStyle(0)
+Gui.F_Emp_Train.txtTJob.create(textbox,"",True,6090,300,0,75,270,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTJob.parent("tabx1",0)
+Gui.F_Emp_Train.txtTJob.defaultvalue("")
+Gui.F_Emp_Train.gsgcNotes.Create(GsGridControl)
+Gui.F_Emp_Train.gsgcNotes.Size(6360,2895)
+Gui.F_Emp_Train.gsgcNotes.Position(75,3135)
+Gui.F_Emp_Train.gsgcNotes.Parent("tabx1",0)
+Gui.F_Emp_Train.gsgcNotes.Event(RowCellClick,gsgcNotes_RowCellClick)
+Gui.F_Emp_Train.gsgcNotes.Enabled(True)
+Gui.F_Emp_Train.gsgcNotes.Visible(True)
+Gui.F_Emp_Train.gsgcNotes.Zorder(0)
+Gui.F_Emp_Train.cmdNoteDel.create(button)
+Gui.F_Emp_Train.cmdNoteDel.caption("Delete")
+Gui.F_Emp_Train.cmdNoteDel.size(855,375)
+Gui.F_Emp_Train.cmdNoteDel.position(900,2655)
+Gui.F_Emp_Train.cmdNoteDel.enabled(False)
+Gui.F_Emp_Train.cmdNoteDel.parent("tabx1",0)
+Gui.F_Emp_Train.cmdNoteDel.event(Click,cmdNoteDel_Click)
+Gui.F_Emp_Train.cmdNoteDel.defaultvalue("")
+Gui.F_Emp_Train.cmdNoteDel.tabstop(True)
+Gui.F_Emp_Train.cmdNoteDel.tabindex(7)
+Gui.F_Emp_Train.cmdNoteDel.Visible(True)
+Gui.F_Emp_Train.cmdNoteDel.Zorder(0)
+Gui.F_Emp_Train.cmdNoteDel.FontName("Tahoma")
+Gui.F_Emp_Train.cmdNoteDel.FontSize(8.25)
+Gui.F_Emp_Train.cmdNoteSave.create(button)
+Gui.F_Emp_Train.cmdNoteSave.caption("Save")
+Gui.F_Emp_Train.cmdNoteSave.size(855,375)
+Gui.F_Emp_Train.cmdNoteSave.position(75,2655)
+Gui.F_Emp_Train.cmdNoteSave.enabled(False)
+Gui.F_Emp_Train.cmdNoteSave.parent("tabx1",0)
+Gui.F_Emp_Train.cmdNoteSave.event(Click,cmdNoteSave_Click)
+Gui.F_Emp_Train.cmdNoteSave.defaultvalue("")
+Gui.F_Emp_Train.cmdNoteSave.tabstop(True)
+Gui.F_Emp_Train.cmdNoteSave.tabindex(6)
+Gui.F_Emp_Train.cmdNoteSave.Visible(True)
+Gui.F_Emp_Train.cmdNoteSave.Zorder(0)
+Gui.F_Emp_Train.cmdNoteSave.FontName("Tahoma")
+Gui.F_Emp_Train.cmdNoteSave.FontSize(8.25)
+Gui.F_Emp_Train.txtTCertProcNo.create(textbox,"",True,840,300,0,105,1125,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTCertProcNo.parent("tabx1",1)
+Gui.F_Emp_Train.txtTCertProcNo.maxLength(8)
+Gui.F_Emp_Train.txtTCertProcNo.defaultvalue("")
+Gui.F_Emp_Train.txtTCertProcNo.tabstop(True)
+Gui.F_Emp_Train.txtTCertProcNo.tabindex(13)
+Gui.F_Emp_Train.lblTCompany.create(label,"Company:",True,780,255,1,3640,85,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTCompany.parent("tabx1",1)
+Gui.F_Emp_Train.lblTCompany.defaultvalue("")
+Gui.F_Emp_Train.lblTCompany.BorderStyle(0)
+Gui.F_Emp_Train.lblTCertProc.create(label,"Training Cert/Proc:",True,1650,255,1,1555,85,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTCertProc.parent("tabx1",1)
+Gui.F_Emp_Train.lblTCertProc.defaultvalue("")
+Gui.F_Emp_Train.lblTCertProc.BorderStyle(0)
+Gui.F_Emp_Train.txtTCompany.create(textbox,"",True,1755,300,0,3645,300,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTCompany.parent("tabx1",1)
+Gui.F_Emp_Train.txtTCompany.maxLength(20)
+Gui.F_Emp_Train.txtTCompany.defaultvalue("")
+Gui.F_Emp_Train.txtTCompany.tabstop(True)
+Gui.F_Emp_Train.txtTCompany.tabindex(11)
+Gui.F_Emp_Train.txtNoteDesc.create(textbox,"",True,4995,300,0,1365,885,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtNoteDesc.parent("tabx1",0)
+Gui.F_Emp_Train.txtNoteDesc.maxLength(30)
+Gui.F_Emp_Train.txtNoteDesc.defaultvalue("")
+Gui.F_Emp_Train.txtNoteDesc.tabstop(True)
+Gui.F_Emp_Train.txtNoteDesc.tabindex(4)
+Gui.F_Emp_Train.cmdTLevAccomBrw.create(button)
+Gui.F_Emp_Train.cmdTLevAccomBrw.caption("^")
+Gui.F_Emp_Train.cmdTLevAccomBrw.size(345,315)
+Gui.F_Emp_Train.cmdTLevAccomBrw.position(1410,1920)
+Gui.F_Emp_Train.cmdTLevAccomBrw.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTLevAccomBrw.event(Click,ButtonRouter)
+Gui.F_Emp_Train.cmdTLevAccomBrw.defaultvalue("")
+Gui.F_Emp_Train.cmdTLevAccomBrw.tabstop(True)
+Gui.F_Emp_Train.cmdTLevAccomBrw.tabindex(18)
+Gui.F_Emp_Train.cmdTLevAccomBrw.Enabled(False)
+Gui.F_Emp_Train.cmdTLevAccomBrw.Visible(True)
+Gui.F_Emp_Train.cmdTLevAccomBrw.Zorder(0)
+Gui.F_Emp_Train.cmdTLevAccomBrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTLevAccomBrw.FontSize(8.25)
+Gui.F_Emp_Train.lblTCertProcNo.create(label,"Cert/Proc Number:",True,825,420,1,120,720,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTCertProcNo.parent("tabx1",1)
+Gui.F_Emp_Train.lblTCertProcNo.defaultvalue("")
+Gui.F_Emp_Train.lblTCertProcNo.BorderStyle(0)
+Gui.F_Emp_Train.txtTRevLev.create(textbox,"",True,750,300,0,1020,1125,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTRevLev.parent("tabx1",1)
+Gui.F_Emp_Train.txtTRevLev.maxLength(6)
+Gui.F_Emp_Train.txtTRevLev.defaultvalue("")
+Gui.F_Emp_Train.txtTRevLev.tabstop(True)
+Gui.F_Emp_Train.txtTRevLev.tabindex(14)
+Gui.F_Emp_Train.lblTRevLev.create(label,"Revision Level:",True,720,420,1,1020,720,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTRevLev.parent("tabx1",1)
+Gui.F_Emp_Train.lblTRevLev.defaultvalue("")
+Gui.F_Emp_Train.lblTRevLev.BorderStyle(0)
+Gui.F_Emp_Train.dtpTTrain.create(datepicker)
+Gui.F_Emp_Train.dtpTTrain.size(1200,300)
+Gui.F_Emp_Train.dtpTTrain.position(1800,1125)
+Gui.F_Emp_Train.dtpTTrain.parent("tabx1",1)
+Gui.F_Emp_Train.dtpTTrain.defaultvalue("")
+Gui.F_Emp_Train.dtpTTrain.tabstop(True)
+Gui.F_Emp_Train.dtpTTrain.tabindex(15)
+Gui.F_Emp_Train.dtpTTrain.Enabled(True)
+Gui.F_Emp_Train.dtpTTrain.Visible(True)
+Gui.F_Emp_Train.dtpTTrain.Zorder(0)
+Gui.F_Emp_Train.dtpTTrain.CheckBox(False)
+Gui.F_Emp_Train.dtpTTrain.FontName("Tahoma")
+Gui.F_Emp_Train.dtpTTrain.FontSize(8.25)
+Gui.F_Emp_Train.txtTLevAccom.create(textbox,"",True,1305,300,0,105,1935,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTLevAccom.parent("tabx1",1)
+Gui.F_Emp_Train.txtTLevAccom.maxLength(20)
+Gui.F_Emp_Train.txtTLevAccom.defaultvalue("")
+Gui.F_Emp_Train.cmdTCompanyBrw.create(button)
+Gui.F_Emp_Train.cmdTCompanyBrw.caption("^")
+Gui.F_Emp_Train.cmdTCompanyBrw.size(345,315)
+Gui.F_Emp_Train.cmdTCompanyBrw.position(5400,285)
+Gui.F_Emp_Train.cmdTCompanyBrw.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTCompanyBrw.event(Click,ButtonRouter)
+Gui.F_Emp_Train.cmdTCompanyBrw.defaultvalue("")
+Gui.F_Emp_Train.cmdTCompanyBrw.tabstop(True)
+Gui.F_Emp_Train.cmdTCompanyBrw.tabindex(12)
+Gui.F_Emp_Train.cmdTCompanyBrw.Enabled(False)
+Gui.F_Emp_Train.cmdTCompanyBrw.Visible(True)
+Gui.F_Emp_Train.cmdTCompanyBrw.Zorder(0)
+Gui.F_Emp_Train.cmdTCompanyBrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTCompanyBrw.FontSize(8.25)
+Gui.F_Emp_Train.lblTExpDate.create(label,"Expiration Date:",True,885,420,1,4020,720,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTExpDate.parent("tabx1",1)
+Gui.F_Emp_Train.lblTExpDate.defaultvalue("")
+Gui.F_Emp_Train.lblTExpDate.BorderStyle(0)
+Gui.F_Emp_Train.dtpTExpDate.create(datepicker)
+Gui.F_Emp_Train.dtpTExpDate.size(1200,300)
+Gui.F_Emp_Train.dtpTExpDate.position(3985,1120)
+Gui.F_Emp_Train.dtpTExpDate.parent("tabx1",1)
+Gui.F_Emp_Train.dtpTExpDate.event(Change,dtpTExpDate_Change)
+Gui.F_Emp_Train.dtpTExpDate.defaultvalue("")
+Gui.F_Emp_Train.dtpTExpDate.tabstop(True)
+Gui.F_Emp_Train.dtpTExpDate.tabindex(17)
+Gui.F_Emp_Train.dtpTExpDate.Enabled(True)
+Gui.F_Emp_Train.dtpTExpDate.Visible(True)
+Gui.F_Emp_Train.dtpTExpDate.Zorder(0)
+Gui.F_Emp_Train.dtpTExpDate.CheckBox(False)
+Gui.F_Emp_Train.dtpTExpDate.FontName("Tahoma")
+Gui.F_Emp_Train.dtpTExpDate.FontSize(8.25)
+Gui.F_Emp_Train.txtTExp.create(textbox,"",True,840,300,0,3075,1125,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTExp.parent("tabx1",1)
+Gui.F_Emp_Train.txtTExp.maxLength(8)
+Gui.F_Emp_Train.txtTExp.event(LostFocus,txtTExp_LostFocus)
+Gui.F_Emp_Train.txtTExp.defaultvalue("")
+Gui.F_Emp_Train.txtTExp.tabstop(True)
+Gui.F_Emp_Train.txtTExp.tabindex(16)
+Gui.F_Emp_Train.txtTExp.NumericOnly(2)
+Gui.F_Emp_Train.lblTExp.create(label,"Days Until Exp.",True,795,420,1,3090,720,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTExp.parent("tabx1",1)
+Gui.F_Emp_Train.lblTExp.defaultvalue("")
+Gui.F_Emp_Train.lblTExp.BorderStyle(0)
+Gui.F_Emp_Train.lblTTrainDate.create(label,"Date of Training:",True,990,420,1,1800,720,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTTrainDate.parent("tabx1",1)
+Gui.F_Emp_Train.lblTTrainDate.defaultvalue("")
+Gui.F_Emp_Train.lblTTrainDate.BorderStyle(0)
+Gui.F_Emp_Train.cmdTCertProcbrw.create(button)
+Gui.F_Emp_Train.cmdTCertProcbrw.caption("^")
+Gui.F_Emp_Train.cmdTCertProcbrw.size(345,315)
+Gui.F_Emp_Train.cmdTCertProcbrw.position(3285,285)
+Gui.F_Emp_Train.cmdTCertProcbrw.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTCertProcbrw.event(Click,ButtonRouter)
+Gui.F_Emp_Train.cmdTCertProcbrw.defaultvalue("")
+Gui.F_Emp_Train.cmdTCertProcbrw.tabstop(True)
+Gui.F_Emp_Train.cmdTCertProcbrw.tabindex(10)
+Gui.F_Emp_Train.cmdTCertProcbrw.Enabled(False)
+Gui.F_Emp_Train.cmdTCertProcbrw.Visible(True)
+Gui.F_Emp_Train.cmdTCertProcbrw.Zorder(0)
+Gui.F_Emp_Train.cmdTCertProcbrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTCertProcbrw.FontSize(8.25)
+Gui.F_Emp_Train.lblTLevAcc.create(label,"Level of Accomplishment:",True,1425,420,1,105,1530,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTLevAcc.parent("tabx1",1)
+Gui.F_Emp_Train.lblTLevAcc.defaultvalue("")
+Gui.F_Emp_Train.lblTLevAcc.BorderStyle(0)
+Gui.F_Emp_Train.lblTNameTrainers.create(label,"Name of Trainer(s):",True,1410,210,1,1755,1740,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTNameTrainers.parent("tabx1",1)
+Gui.F_Emp_Train.lblTNameTrainers.defaultvalue("")
+Gui.F_Emp_Train.lblTNameTrainers.BorderStyle(0)
+Gui.F_Emp_Train.txtTTrainers.create(textbox,"",True,1770,300,0,1755,1935,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTTrainers.parent("tabx1",1)
+Gui.F_Emp_Train.txtTTrainers.maxLength(30)
+Gui.F_Emp_Train.txtTTrainers.defaultvalue("")
+Gui.F_Emp_Train.txtTTrainers.tabstop(True)
+Gui.F_Emp_Train.txtTTrainers.tabindex(19)
+Gui.F_Emp_Train.txtTID.create(textbox,"",False,750,300,0,5565,1100,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTID.parent("tabx1",1)
+Gui.F_Emp_Train.txtTID.defaultvalue("")
+Gui.F_Emp_Train.cboTType.create(combobox)
+Gui.F_Emp_Train.cboTType.size(1470,330)
+Gui.F_Emp_Train.cboTType.position(45,300)
+Gui.F_Emp_Train.cboTType.parent("tabx1",1)
+Gui.F_Emp_Train.cboTType.defaultvalue("")
+Gui.F_Emp_Train.cboTType.tabstop(True)
+Gui.F_Emp_Train.cboTType.tabindex(8)
+Gui.F_Emp_Train.cboTType.Enabled(True)
+Gui.F_Emp_Train.cboTType.Visible(True)
+Gui.F_Emp_Train.cboTType.Zorder(0)
+Gui.F_Emp_Train.cboTType.FontName("Tahoma")
+Gui.F_Emp_Train.cboTType.FontSize(8.25)
+Gui.F_Emp_Train.gsgcTrain.Create(GsGridControl)
+Gui.F_Emp_Train.gsgcTrain.Size(6360,1815)
+Gui.F_Emp_Train.gsgcTrain.Position(45,4245)
+Gui.F_Emp_Train.gsgcTrain.Parent("tabx1",1)
+Gui.F_Emp_Train.gsgcTrain.Event(RowCellClick,gsgcTrain_RowCellClick)
+Gui.F_Emp_Train.gsgcTrain.Enabled(True)
+Gui.F_Emp_Train.gsgcTrain.Visible(True)
+Gui.F_Emp_Train.gsgcTrain.Zorder(0)
+Gui.F_Emp_Train.lblCertDoc.create(label,"Document:",True,765,210,1,90,3120,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblCertDoc.parent("tabx1",1)
+Gui.F_Emp_Train.lblCertDoc.defaultvalue("")
+Gui.F_Emp_Train.lblCertDoc.BorderStyle(0)
+Gui.F_Emp_Train.txtCertDoc.create(textbox,"",True,5295,300,0,90,3345,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtCertDoc.parent("tabx1",1)
+Gui.F_Emp_Train.txtCertDoc.maxLength(100)
+Gui.F_Emp_Train.txtCertDoc.defaultvalue("")
+Gui.F_Emp_Train.txtCertDoc.tabstop(True)
+Gui.F_Emp_Train.txtCertDoc.tabindex(26)
+Gui.F_Emp_Train.cmdViewCertDoc.create(button)
+Gui.F_Emp_Train.cmdViewCertDoc.caption("View")
+Gui.F_Emp_Train.cmdViewCertDoc.size(600,375)
+Gui.F_Emp_Train.cmdViewCertDoc.position(5805,3300)
+Gui.F_Emp_Train.cmdViewCertDoc.enabled(False)
+Gui.F_Emp_Train.cmdViewCertDoc.parent("tabx1",1)
+Gui.F_Emp_Train.cmdViewCertDoc.event(Click,cmdViewCertDoc_Click)
+Gui.F_Emp_Train.cmdViewCertDoc.defaultvalue("")
+Gui.F_Emp_Train.cmdViewCertDoc.tabstop(True)
+Gui.F_Emp_Train.cmdViewCertDoc.tabindex(28)
+Gui.F_Emp_Train.cmdViewCertDoc.Visible(True)
+Gui.F_Emp_Train.cmdViewCertDoc.Zorder(0)
+Gui.F_Emp_Train.cmdViewCertDoc.FontName("Tahoma")
+Gui.F_Emp_Train.cmdViewCertDoc.FontSize(8.25)
+Gui.F_Emp_Train.cmdCertDoc.create(button)
+Gui.F_Emp_Train.cmdCertDoc.caption("^")
+Gui.F_Emp_Train.cmdCertDoc.size(345,315)
+Gui.F_Emp_Train.cmdCertDoc.position(5385,3345)
+Gui.F_Emp_Train.cmdCertDoc.enabled(False)
+Gui.F_Emp_Train.cmdCertDoc.parent("tabx1",1)
+Gui.F_Emp_Train.cmdCertDoc.event(Click,cmdDocOrigin_Click)
+Gui.F_Emp_Train.cmdCertDoc.defaultvalue("")
+Gui.F_Emp_Train.cmdCertDoc.tabstop(True)
+Gui.F_Emp_Train.cmdCertDoc.tabindex(27)
+Gui.F_Emp_Train.cmdCertDoc.Visible(True)
+Gui.F_Emp_Train.cmdCertDoc.Zorder(0)
+Gui.F_Emp_Train.cmdCertDoc.FontName("Tahoma")
+Gui.F_Emp_Train.cmdCertDoc.FontSize(8.25)
+Gui.F_Emp_Train.txtTEmpEQ.create(textbox,"",True,1245,300,0,60,2745,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTEmpEQ.parent("tabx1",1)
+Gui.F_Emp_Train.txtTEmpEQ.maxLength(15)
+Gui.F_Emp_Train.txtTEmpEQ.defaultvalue("")
+Gui.F_Emp_Train.txtTEmpEQ.tabstop(True)
+Gui.F_Emp_Train.txtTEmpEQ.tabindex(23)
+Gui.F_Emp_Train.lblTEQnum.create(label,"Current EQ Number:",True,1095,420,1,60,2325,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTEQnum.parent("tabx1",1)
+Gui.F_Emp_Train.lblTEQnum.defaultvalue("")
+Gui.F_Emp_Train.lblTEQnum.BorderStyle(0)
+Gui.F_Emp_Train.cmdTEvalBrw.create(button)
+Gui.F_Emp_Train.cmdTEvalBrw.caption("^")
+Gui.F_Emp_Train.cmdTEvalBrw.size(345,315)
+Gui.F_Emp_Train.cmdTEvalBrw.position(6135,1920)
+Gui.F_Emp_Train.cmdTEvalBrw.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTEvalBrw.event(Click,ButtonRouter)
+Gui.F_Emp_Train.cmdTEvalBrw.defaultvalue("")
+Gui.F_Emp_Train.cmdTEvalBrw.tabstop(True)
+Gui.F_Emp_Train.cmdTEvalBrw.tabindex(22)
+Gui.F_Emp_Train.cmdTEvalBrw.Enabled(False)
+Gui.F_Emp_Train.cmdTEvalBrw.Visible(True)
+Gui.F_Emp_Train.cmdTEvalBrw.Zorder(0)
+Gui.F_Emp_Train.cmdTEvalBrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTEvalBrw.FontSize(8.25)
+Gui.F_Emp_Train.txtTEval.create(textbox,"",True,1215,300,0,4920,1935,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTEval.parent("tabx1",1)
+Gui.F_Emp_Train.txtTEval.maxLength(15)
+Gui.F_Emp_Train.txtTEval.defaultvalue("")
+Gui.F_Emp_Train.txtTEval.tabstop(True)
+Gui.F_Emp_Train.txtTEval.tabindex(21)
+Gui.F_Emp_Train.lblTEval.create(label,"Evaluation:",True,780,210,1,4920,1740,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTEval.parent("tabx1",1)
+Gui.F_Emp_Train.lblTEval.defaultvalue("")
+Gui.F_Emp_Train.lblTEval.BorderStyle(0)
+Gui.F_Emp_Train.lblTEffect.create(label,"Effectiveness of Training:",True,1110,420,1,3570,1530,True,0,"Arial",8,-2147483633,0,3)
+Gui.F_Emp_Train.lblTEffect.parent("tabx1",1)
+Gui.F_Emp_Train.lblTEffect.defaultvalue("")
+Gui.F_Emp_Train.lblTEffect.BorderStyle(0)
+Gui.F_Emp_Train.cboTEffective.create(combobox)
+Gui.F_Emp_Train.cboTEffective.size(1305,300)
+Gui.F_Emp_Train.cboTEffective.position(3570,1935)
+Gui.F_Emp_Train.cboTEffective.parent("tabx1",1)
+Gui.F_Emp_Train.cboTEffective.defaultvalue("")
+Gui.F_Emp_Train.cboTEffective.tabstop(True)
+Gui.F_Emp_Train.cboTEffective.tabindex(20)
+Gui.F_Emp_Train.cboTEffective.Enabled(True)
+Gui.F_Emp_Train.cboTEffective.Visible(True)
+Gui.F_Emp_Train.cboTEffective.Zorder(0)
+Gui.F_Emp_Train.cboTEffective.FontName("Tahoma")
+Gui.F_Emp_Train.cboTEffective.FontSize(8.25)
+Gui.F_Emp_Train.cmdTEmpEQBrw.create(button)
+Gui.F_Emp_Train.cmdTEmpEQBrw.caption("^")
+Gui.F_Emp_Train.cmdTEmpEQBrw.size(345,315)
+Gui.F_Emp_Train.cmdTEmpEQBrw.position(1320,2730)
+Gui.F_Emp_Train.cmdTEmpEQBrw.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTEmpEQBrw.event(Click,ButtonRouter)
+Gui.F_Emp_Train.cmdTEmpEQBrw.defaultvalue("")
+Gui.F_Emp_Train.cmdTEmpEQBrw.tabstop(True)
+Gui.F_Emp_Train.cmdTEmpEQBrw.tabindex(24)
+Gui.F_Emp_Train.cmdTEmpEQBrw.Enabled(False)
+Gui.F_Emp_Train.cmdTEmpEQBrw.Visible(True)
+Gui.F_Emp_Train.cmdTEmpEQBrw.Zorder(0)
+Gui.F_Emp_Train.cmdTEmpEQBrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTEmpEQBrw.FontSize(8.25)
+Gui.F_Emp_Train.lblTID.create(label,"ID",False,555,255,1,5615,1215,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTID.parent("tabx1",1)
+Gui.F_Emp_Train.lblTID.defaultvalue("")
+Gui.F_Emp_Train.lblTID.BorderStyle(0)
+Gui.F_Emp_Train.lblTDocOrig.create(label,"Document Origin:",True,1230,210,1,1725,2535,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTDocOrig.parent("tabx1",1)
+Gui.F_Emp_Train.lblTDocOrig.defaultvalue("")
+Gui.F_Emp_Train.lblTDocOrig.BorderStyle(0)
+Gui.F_Emp_Train.txtTDocOrigin.create(textbox,"",True,1740,300,0,1725,2745,True,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTDocOrigin.parent("tabx1",1)
+Gui.F_Emp_Train.txtTDocOrigin.maxLength(30)
+Gui.F_Emp_Train.txtTDocOrigin.defaultvalue("")
+Gui.F_Emp_Train.txtTDocOrigin.tabstop(True)
+Gui.F_Emp_Train.txtTDocOrigin.tabindex(25)
+Gui.F_Emp_Train.cmdTDel.create(button)
+Gui.F_Emp_Train.cmdTDel.caption("Delete")
+Gui.F_Emp_Train.cmdTDel.size(855,375)
+Gui.F_Emp_Train.cmdTDel.position(900,3795)
+Gui.F_Emp_Train.cmdTDel.enabled(False)
+Gui.F_Emp_Train.cmdTDel.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTDel.event(Click,cmdTDel_Click)
+Gui.F_Emp_Train.cmdTDel.defaultvalue("")
+Gui.F_Emp_Train.cmdTDel.tabstop(True)
+Gui.F_Emp_Train.cmdTDel.tabindex(30)
+Gui.F_Emp_Train.cmdTDel.Visible(True)
+Gui.F_Emp_Train.cmdTDel.Zorder(0)
+Gui.F_Emp_Train.cmdTDel.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTDel.FontSize(8.25)
+Gui.F_Emp_Train.cmdTSave.create(button)
+Gui.F_Emp_Train.cmdTSave.caption("Save")
+Gui.F_Emp_Train.cmdTSave.size(855,375)
+Gui.F_Emp_Train.cmdTSave.position(75,3795)
+Gui.F_Emp_Train.cmdTSave.enabled(False)
+Gui.F_Emp_Train.cmdTSave.parent("tabx1",1)
+Gui.F_Emp_Train.cmdTSave.event(Click,cmdTSave_Click)
+Gui.F_Emp_Train.cmdTSave.defaultvalue("")
+Gui.F_Emp_Train.cmdTSave.tabstop(True)
+Gui.F_Emp_Train.cmdTSave.tabindex(29)
+Gui.F_Emp_Train.cmdTSave.Visible(True)
+Gui.F_Emp_Train.cmdTSave.Zorder(0)
+Gui.F_Emp_Train.cmdTSave.FontName("Tahoma")
+Gui.F_Emp_Train.cmdTSave.FontSize(8.25)
+Gui.F_Emp_Train.lblTType.create(label,"Type:",True,450,255,1,85,85,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblTType.parent("tabx1",1)
+Gui.F_Emp_Train.lblTType.defaultvalue("")
+Gui.F_Emp_Train.lblTType.BorderStyle(0)
+Gui.F_Emp_Train.txtTCertProc.create(textbox,"",True,1740,300,0,1545,300,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtTCertProc.parent("tabx1",1)
+Gui.F_Emp_Train.txtTCertProc.maxLength(20)
+Gui.F_Emp_Train.txtTCertProc.defaultvalue("")
+Gui.F_Emp_Train.txtTCertProc.tabstop(True)
+Gui.F_Emp_Train.txtTCertProc.tabindex(9)
+Gui.F_Emp_Train.frm_bInfo.create(frame)
+Gui.F_Emp_Train.frm_bInfo.size(6675,990)
+Gui.F_Emp_Train.frm_bInfo.position(105,30)
+Gui.F_Emp_Train.frm_bInfo.Event(Click,ButtonRouter)
+Gui.F_Emp_Train.frm_bInfo.Parent("frm_left")
+Gui.F_Emp_Train.frm_bInfo.Enabled(True)
+Gui.F_Emp_Train.frm_bInfo.Visible(True)
+Gui.F_Emp_Train.frm_bInfo.Zorder(0)
+Gui.F_Emp_Train.frm_bInfo.Caption("")
+Gui.F_Emp_Train.frm_bInfo.FontName("Tahoma")
+Gui.F_Emp_Train.frm_bInfo.FontSize(8.25)
+Gui.F_Emp_Train.lblEmpName.create(label,"Employee Name:",True,2190,255,1,120,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblEmpName.parent("frm_bInfo")
+Gui.F_Emp_Train.lblEmpName.defaultvalue("")
+Gui.F_Emp_Train.lblEmpName.BorderStyle(0)
+Gui.F_Emp_Train.lblEmpNo.create(label,"Number:",True,780,255,1,2460,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblEmpNo.parent("frm_bInfo")
+Gui.F_Emp_Train.lblEmpNo.defaultvalue("")
+Gui.F_Emp_Train.lblEmpNo.BorderStyle(0)
+Gui.F_Emp_Train.txtEmp.create(textbox,"",True,1905,300,0,105,465,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtEmp.parent("frm_bInfo")
+Gui.F_Emp_Train.txtEmp.defaultvalue("")
+Gui.F_Emp_Train.cmdEmpBrw.create(button)
+Gui.F_Emp_Train.cmdEmpBrw.caption("^")
+Gui.F_Emp_Train.cmdEmpBrw.size(345,315)
+Gui.F_Emp_Train.cmdEmpBrw.position(2010,450)
+Gui.F_Emp_Train.cmdEmpBrw.parent("frm_bInfo")
+Gui.F_Emp_Train.cmdEmpBrw.event(Click,cmdEmpBrw_Click)
+Gui.F_Emp_Train.cmdEmpBrw.defaultvalue("")
+Gui.F_Emp_Train.cmdEmpBrw.tabstop(True)
+Gui.F_Emp_Train.cmdEmpBrw.tabindex(1)
+Gui.F_Emp_Train.cmdEmpBrw.Enabled(True)
+Gui.F_Emp_Train.cmdEmpBrw.Visible(True)
+Gui.F_Emp_Train.cmdEmpBrw.Zorder(0)
+Gui.F_Emp_Train.cmdEmpBrw.FontName("Tahoma")
+Gui.F_Emp_Train.cmdEmpBrw.FontSize(8.25)
+Gui.F_Emp_Train.txtEmpNum.create(textbox,"",True,825,300,0,2445,465,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtEmpNum.parent("frm_bInfo")
+Gui.F_Emp_Train.txtEmpNum.defaultvalue("")
+Gui.F_Emp_Train.lblHire.create(label,"Hire Date:",True,825,255,1,3375,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblHire.parent("frm_bInfo")
+Gui.F_Emp_Train.lblHire.defaultvalue("")
+Gui.F_Emp_Train.lblHire.BorderStyle(0)
+Gui.F_Emp_Train.txtHireDate.create(textbox,"",True,1095,300,0,3330,465,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtHireDate.parent("frm_bInfo")
+Gui.F_Emp_Train.txtHireDate.defaultvalue("")
+Gui.F_Emp_Train.lblShift.create(label,"Shift:",True,375,210,1,4455,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblShift.parent("frm_bInfo")
+Gui.F_Emp_Train.lblShift.defaultvalue("")
+Gui.F_Emp_Train.lblShift.BorderStyle(0)
+Gui.F_Emp_Train.txtShift.create(textbox,"",True,465,300,0,4440,465,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtShift.parent("frm_bInfo")
+Gui.F_Emp_Train.txtShift.defaultvalue("")
+Gui.F_Emp_Train.lblDep.create(label,"Dept:",True,375,210,1,4980,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblDep.parent("frm_bInfo")
+Gui.F_Emp_Train.lblDep.defaultvalue("")
+Gui.F_Emp_Train.lblDep.BorderStyle(0)
+Gui.F_Emp_Train.txtDep.create(textbox,"",True,615,300,0,4920,465,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtDep.parent("frm_bInfo")
+Gui.F_Emp_Train.txtDep.defaultvalue("")
+Gui.F_Emp_Train.lblRate.create(label,"Rate:",False,375,210,1,5595,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblRate.parent("frm_bInfo")
+Gui.F_Emp_Train.lblRate.defaultvalue("")
+Gui.F_Emp_Train.lblRate.BorderStyle(0)
+Gui.F_Emp_Train.txtRate.create(textbox,"",False,990,300,0,5580,465,False,0,"Arial",8,-2147483643,1)
+Gui.F_Emp_Train.txtRate.parent("frm_bInfo")
+Gui.F_Emp_Train.txtRate.defaultvalue("")
+Gui.F_Emp_Train.picPhoto.create(picturebox)
+Gui.F_Emp_Train.picPhoto.size(4995,7125)
+Gui.F_Emp_Train.picPhoto.position(6915,480)
+Gui.F_Emp_Train.picPhoto.BackColor(16777215)
+Gui.F_Emp_Train.picPhoto.SizeMode(4)
+Gui.F_Emp_Train.picPhoto.Enabled(True)
+Gui.F_Emp_Train.picPhoto.Visible(True)
+Gui.F_Emp_Train.picPhoto.Zorder(0)
+Gui.F_Emp_Train.cmdUpdPic.create(button)
+Gui.F_Emp_Train.cmdUpdPic.caption("Update Picture")
+Gui.F_Emp_Train.cmdUpdPic.size(1425,375)
+Gui.F_Emp_Train.cmdUpdPic.position(6915,7740)
+Gui.F_Emp_Train.cmdUpdPic.enabled(False)
+Gui.F_Emp_Train.cmdUpdPic.event(Click,cmdUpdPic_Click)
+Gui.F_Emp_Train.cmdUpdPic.defaultvalue("")
+Gui.F_Emp_Train.cmdUpdPic.tabstop(True)
+Gui.F_Emp_Train.cmdUpdPic.tabindex(31)
+Gui.F_Emp_Train.cmdUpdPic.Visible(True)
+Gui.F_Emp_Train.cmdUpdPic.Zorder(0)
+Gui.F_Emp_Train.cmdUpdPic.FontName("Tahoma")
+Gui.F_Emp_Train.cmdUpdPic.FontSize(8.25)
+Gui.F_Emp_Train.lblPic.Create(Label,"Employee Photo",True,1140,210,0,6915,210,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Emp_Train.lblPic.BorderStyle(0)
+Gui.F_Maint..create(BaseForm)
+Gui.F_Maint..caption("Field Maintenance")
+Gui.F_Maint..size(5700,5475)
+Gui.F_Maint..minx(5700)
+Gui.F_Maint..miny(5475)
+Gui.F_Maint..position(0,0)
+Gui.F_Maint..event(UnLoad,F_Maint_Unload)
+Gui.F_Maint..forecolor(0)
+Gui.F_Maint..BackColor(-2147483633)
+Gui.F_Maint..maxbutton(False)
+Gui.F_Maint..minbutton(False)
+Gui.F_Maint..mousepointer(0)
+Gui.F_Maint..AlwaysOnTop(False)
+Gui.F_Maint..FontName("Tahoma")
+Gui.F_Maint..FontSize(8.25)
+Gui.F_Maint..ControlBox(True)
+Gui.F_Maint..Moveable(True)
+Gui.F_Maint..Sizeable(True)
+Gui.F_Maint..ShowInTaskBar(True)
+Gui.F_Maint..TitleBar(True)
+Gui.F_Maint.frmMTrainCertProc.create(frame)
+Gui.F_Maint.frmMTrainCertProc.caption("Training Certification/Procedure")
+Gui.F_Maint.frmMTrainCertProc.size(5070,720)
+Gui.F_Maint.frmMTrainCertProc.position(195,825)
+Gui.F_Maint.frmMTrainCertProc.Enabled(True)
+Gui.F_Maint.frmMTrainCertProc.Visible(True)
+Gui.F_Maint.frmMTrainCertProc.Zorder(0)
+Gui.F_Maint.frmMTrainCertProc.FontName("Tahoma")
+Gui.F_Maint.frmMTrainCertProc.FontSize(8.25)
+Gui.F_Maint.txtMCertProc.create(textbox,"",True,1905,300,0,105,270,True,0,"Arial",8,-2147483643,1)
+Gui.F_Maint.txtMCertProc.parent("frmMTrainCertProc")
+Gui.F_Maint.txtMCertProc.maxLength(75)
+Gui.F_Maint.txtMCertProc.defaultvalue("")
+Gui.F_Maint.cmdMCertProcBrw.create(button)
+Gui.F_Maint.cmdMCertProcBrw.caption("^")
+Gui.F_Maint.cmdMCertProcBrw.size(345,315)
+Gui.F_Maint.cmdMCertProcBrw.position(2010,270)
+Gui.F_Maint.cmdMCertProcBrw.parent("frmMTrainCertProc")
+Gui.F_Maint.cmdMCertProcBrw.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMCertProcBrw.defaultvalue("")
+Gui.F_Maint.cmdMCertProcBrw.tabstop(True)
+Gui.F_Maint.cmdMCertProcBrw.tabindex(4)
+Gui.F_Maint.cmdMCertProcBrw.Enabled(True)
+Gui.F_Maint.cmdMCertProcBrw.Visible(True)
+Gui.F_Maint.cmdMCertProcBrw.Zorder(0)
+Gui.F_Maint.cmdMCertProcBrw.FontName("Tahoma")
+Gui.F_Maint.cmdMCertProcBrw.FontSize(8.25)
+Gui.F_Maint.cmdMCertProcSave.create(button)
+Gui.F_Maint.cmdMCertProcSave.caption("Save")
+Gui.F_Maint.cmdMCertProcSave.size(855,375)
+Gui.F_Maint.cmdMCertProcSave.position(3090,225)
+Gui.F_Maint.cmdMCertProcSave.parent("frmMTrainCertProc")
+Gui.F_Maint.cmdMCertProcSave.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMCertProcSave.defaultvalue("")
+Gui.F_Maint.cmdMCertProcSave.tabstop(True)
+Gui.F_Maint.cmdMCertProcSave.tabindex(5)
+Gui.F_Maint.cmdMCertProcSave.Enabled(True)
+Gui.F_Maint.cmdMCertProcSave.Visible(True)
+Gui.F_Maint.cmdMCertProcSave.Zorder(0)
+Gui.F_Maint.cmdMCertProcSave.FontName("Tahoma")
+Gui.F_Maint.cmdMCertProcSave.FontSize(8.25)
+Gui.F_Maint.cmdMCertProcDel.create(button)
+Gui.F_Maint.cmdMCertProcDel.caption("Delete")
+Gui.F_Maint.cmdMCertProcDel.size(855,375)
+Gui.F_Maint.cmdMCertProcDel.position(3990,225)
+Gui.F_Maint.cmdMCertProcDel.parent("frmMTrainCertProc")
+Gui.F_Maint.cmdMCertProcDel.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMCertProcDel.defaultvalue("")
+Gui.F_Maint.cmdMCertProcDel.tabstop(True)
+Gui.F_Maint.cmdMCertProcDel.tabindex(6)
+Gui.F_Maint.cmdMCertProcDel.Enabled(True)
+Gui.F_Maint.cmdMCertProcDel.Visible(True)
+Gui.F_Maint.cmdMCertProcDel.Zorder(0)
+Gui.F_Maint.cmdMCertProcDel.FontName("Tahoma")
+Gui.F_Maint.cmdMCertProcDel.FontSize(8.25)
+Gui.F_Maint.frmMCompany.create(frame)
+Gui.F_Maint.frmMCompany.caption("Company")
+Gui.F_Maint.frmMCompany.size(5070,720)
+Gui.F_Maint.frmMCompany.position(195,1620)
+Gui.F_Maint.frmMCompany.Enabled(True)
+Gui.F_Maint.frmMCompany.Visible(True)
+Gui.F_Maint.frmMCompany.Zorder(0)
+Gui.F_Maint.frmMCompany.FontName("Tahoma")
+Gui.F_Maint.frmMCompany.FontSize(8.25)
+Gui.F_Maint.txtMCompany.create(textbox,"",True,1905,300,0,105,270,True,0,"Arial",8,-2147483643,1)
+Gui.F_Maint.txtMCompany.parent("frmMCompany")
+Gui.F_Maint.txtMCompany.maxLength(75)
+Gui.F_Maint.txtMCompany.defaultvalue("")
+Gui.F_Maint.cmdMCompanyBrw.create(button)
+Gui.F_Maint.cmdMCompanyBrw.caption("^")
+Gui.F_Maint.cmdMCompanyBrw.size(345,315)
+Gui.F_Maint.cmdMCompanyBrw.position(2010,270)
+Gui.F_Maint.cmdMCompanyBrw.parent("frmMCompany")
+Gui.F_Maint.cmdMCompanyBrw.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMCompanyBrw.defaultvalue("")
+Gui.F_Maint.cmdMCompanyBrw.tabstop(True)
+Gui.F_Maint.cmdMCompanyBrw.tabindex(7)
+Gui.F_Maint.cmdMCompanyBrw.Enabled(True)
+Gui.F_Maint.cmdMCompanyBrw.Visible(True)
+Gui.F_Maint.cmdMCompanyBrw.Zorder(0)
+Gui.F_Maint.cmdMCompanyBrw.FontName("Tahoma")
+Gui.F_Maint.cmdMCompanyBrw.FontSize(8.25)
+Gui.F_Maint.cmdMCompSave.create(button)
+Gui.F_Maint.cmdMCompSave.caption("Save")
+Gui.F_Maint.cmdMCompSave.size(855,375)
+Gui.F_Maint.cmdMCompSave.position(3090,225)
+Gui.F_Maint.cmdMCompSave.parent("frmMCompany")
+Gui.F_Maint.cmdMCompSave.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMCompSave.defaultvalue("")
+Gui.F_Maint.cmdMCompSave.tabstop(True)
+Gui.F_Maint.cmdMCompSave.tabindex(8)
+Gui.F_Maint.cmdMCompSave.Enabled(True)
+Gui.F_Maint.cmdMCompSave.Visible(True)
+Gui.F_Maint.cmdMCompSave.Zorder(0)
+Gui.F_Maint.cmdMCompSave.FontName("Tahoma")
+Gui.F_Maint.cmdMCompSave.FontSize(8.25)
+Gui.F_Maint.cmdMCompDel.create(button)
+Gui.F_Maint.cmdMCompDel.caption("Delete")
+Gui.F_Maint.cmdMCompDel.size(855,375)
+Gui.F_Maint.cmdMCompDel.position(3990,225)
+Gui.F_Maint.cmdMCompDel.parent("frmMCompany")
+Gui.F_Maint.cmdMCompDel.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMCompDel.defaultvalue("")
+Gui.F_Maint.cmdMCompDel.tabstop(True)
+Gui.F_Maint.cmdMCompDel.tabindex(9)
+Gui.F_Maint.cmdMCompDel.Enabled(True)
+Gui.F_Maint.cmdMCompDel.Visible(True)
+Gui.F_Maint.cmdMCompDel.Zorder(0)
+Gui.F_Maint.cmdMCompDel.FontName("Tahoma")
+Gui.F_Maint.cmdMCompDel.FontSize(8.25)
+Gui.F_Maint.frmMLevAccom.create(frame)
+Gui.F_Maint.frmMLevAccom.caption("Level of Accomplishment")
+Gui.F_Maint.frmMLevAccom.size(5070,720)
+Gui.F_Maint.frmMLevAccom.position(195,2445)
+Gui.F_Maint.frmMLevAccom.Enabled(True)
+Gui.F_Maint.frmMLevAccom.Visible(True)
+Gui.F_Maint.frmMLevAccom.Zorder(0)
+Gui.F_Maint.frmMLevAccom.FontName("Tahoma")
+Gui.F_Maint.frmMLevAccom.FontSize(8.25)
+Gui.F_Maint.txtMLevAccom.create(textbox,"",True,1905,300,0,105,270,True,0,"Arial",8,-2147483643,1)
+Gui.F_Maint.txtMLevAccom.parent("frmMLevAccom")
+Gui.F_Maint.txtMLevAccom.maxLength(75)
+Gui.F_Maint.txtMLevAccom.defaultvalue("")
+Gui.F_Maint.cmdMLevAccomBrw.create(button)
+Gui.F_Maint.cmdMLevAccomBrw.caption("^")
+Gui.F_Maint.cmdMLevAccomBrw.size(345,315)
+Gui.F_Maint.cmdMLevAccomBrw.position(2010,270)
+Gui.F_Maint.cmdMLevAccomBrw.parent("frmMLevAccom")
+Gui.F_Maint.cmdMLevAccomBrw.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMLevAccomBrw.defaultvalue("")
+Gui.F_Maint.cmdMLevAccomBrw.tabstop(True)
+Gui.F_Maint.cmdMLevAccomBrw.tabindex(10)
+Gui.F_Maint.cmdMLevAccomBrw.Enabled(True)
+Gui.F_Maint.cmdMLevAccomBrw.Visible(True)
+Gui.F_Maint.cmdMLevAccomBrw.Zorder(0)
+Gui.F_Maint.cmdMLevAccomBrw.FontName("Tahoma")
+Gui.F_Maint.cmdMLevAccomBrw.FontSize(8.25)
+Gui.F_Maint.cmdMLevAccomSave.create(button)
+Gui.F_Maint.cmdMLevAccomSave.caption("Save")
+Gui.F_Maint.cmdMLevAccomSave.size(855,375)
+Gui.F_Maint.cmdMLevAccomSave.position(3090,225)
+Gui.F_Maint.cmdMLevAccomSave.parent("frmMLevAccom")
+Gui.F_Maint.cmdMLevAccomSave.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMLevAccomSave.defaultvalue("")
+Gui.F_Maint.cmdMLevAccomSave.tabstop(True)
+Gui.F_Maint.cmdMLevAccomSave.tabindex(11)
+Gui.F_Maint.cmdMLevAccomSave.Enabled(True)
+Gui.F_Maint.cmdMLevAccomSave.Visible(True)
+Gui.F_Maint.cmdMLevAccomSave.Zorder(0)
+Gui.F_Maint.cmdMLevAccomSave.FontName("Tahoma")
+Gui.F_Maint.cmdMLevAccomSave.FontSize(8.25)
+Gui.F_Maint.cmdMLevAccomDel.create(button)
+Gui.F_Maint.cmdMLevAccomDel.caption("Delete")
+Gui.F_Maint.cmdMLevAccomDel.size(855,375)
+Gui.F_Maint.cmdMLevAccomDel.position(3990,225)
+Gui.F_Maint.cmdMLevAccomDel.parent("frmMLevAccom")
+Gui.F_Maint.cmdMLevAccomDel.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMLevAccomDel.defaultvalue("")
+Gui.F_Maint.cmdMLevAccomDel.tabstop(True)
+Gui.F_Maint.cmdMLevAccomDel.tabindex(12)
+Gui.F_Maint.cmdMLevAccomDel.Enabled(True)
+Gui.F_Maint.cmdMLevAccomDel.Visible(True)
+Gui.F_Maint.cmdMLevAccomDel.Zorder(0)
+Gui.F_Maint.cmdMLevAccomDel.FontName("Tahoma")
+Gui.F_Maint.cmdMLevAccomDel.FontSize(8.25)
+Gui.F_Maint.frmMEmpEQ.create(frame)
+Gui.F_Maint.frmMEmpEQ.caption("Current EQ Number")
+Gui.F_Maint.frmMEmpEQ.size(5070,720)
+Gui.F_Maint.frmMEmpEQ.position(195,4065)
+Gui.F_Maint.frmMEmpEQ.Enabled(True)
+Gui.F_Maint.frmMEmpEQ.Visible(True)
+Gui.F_Maint.frmMEmpEQ.Zorder(0)
+Gui.F_Maint.frmMEmpEQ.FontName("Tahoma")
+Gui.F_Maint.frmMEmpEQ.FontSize(8.25)
+Gui.F_Maint.txtMEmpEq.create(textbox,"",True,1905,300,0,105,270,True,0,"Arial",8,-2147483643,1)
+Gui.F_Maint.txtMEmpEq.parent("frmMEmpEQ")
+Gui.F_Maint.txtMEmpEq.maxLength(75)
+Gui.F_Maint.txtMEmpEq.defaultvalue("")
+Gui.F_Maint.cmdMEmpEQBrw.create(button)
+Gui.F_Maint.cmdMEmpEQBrw.caption("^")
+Gui.F_Maint.cmdMEmpEQBrw.size(345,315)
+Gui.F_Maint.cmdMEmpEQBrw.position(2010,270)
+Gui.F_Maint.cmdMEmpEQBrw.parent("frmMEmpEQ")
+Gui.F_Maint.cmdMEmpEQBrw.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMEmpEQBrw.defaultvalue("")
+Gui.F_Maint.cmdMEmpEQBrw.tabstop(True)
+Gui.F_Maint.cmdMEmpEQBrw.tabindex(16)
+Gui.F_Maint.cmdMEmpEQBrw.Enabled(True)
+Gui.F_Maint.cmdMEmpEQBrw.Visible(True)
+Gui.F_Maint.cmdMEmpEQBrw.Zorder(0)
+Gui.F_Maint.cmdMEmpEQBrw.FontName("Tahoma")
+Gui.F_Maint.cmdMEmpEQBrw.FontSize(8.25)
+Gui.F_Maint.cmdMEmpEqSave.create(button)
+Gui.F_Maint.cmdMEmpEqSave.caption("Save")
+Gui.F_Maint.cmdMEmpEqSave.size(855,375)
+Gui.F_Maint.cmdMEmpEqSave.position(3090,225)
+Gui.F_Maint.cmdMEmpEqSave.parent("frmMEmpEQ")
+Gui.F_Maint.cmdMEmpEqSave.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMEmpEqSave.defaultvalue("")
+Gui.F_Maint.cmdMEmpEqSave.tabstop(True)
+Gui.F_Maint.cmdMEmpEqSave.tabindex(17)
+Gui.F_Maint.cmdMEmpEqSave.Enabled(True)
+Gui.F_Maint.cmdMEmpEqSave.Visible(True)
+Gui.F_Maint.cmdMEmpEqSave.Zorder(0)
+Gui.F_Maint.cmdMEmpEqSave.FontName("Tahoma")
+Gui.F_Maint.cmdMEmpEqSave.FontSize(8.25)
+Gui.F_Maint.cmdMEmpEqDel.create(button)
+Gui.F_Maint.cmdMEmpEqDel.caption("Delete")
+Gui.F_Maint.cmdMEmpEqDel.size(855,375)
+Gui.F_Maint.cmdMEmpEqDel.position(3990,225)
+Gui.F_Maint.cmdMEmpEqDel.parent("frmMEmpEQ")
+Gui.F_Maint.cmdMEmpEqDel.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMEmpEqDel.defaultvalue("")
+Gui.F_Maint.cmdMEmpEqDel.tabstop(True)
+Gui.F_Maint.cmdMEmpEqDel.tabindex(18)
+Gui.F_Maint.cmdMEmpEqDel.Enabled(True)
+Gui.F_Maint.cmdMEmpEqDel.Visible(True)
+Gui.F_Maint.cmdMEmpEqDel.Zorder(0)
+Gui.F_Maint.cmdMEmpEqDel.FontName("Tahoma")
+Gui.F_Maint.cmdMEmpEqDel.FontSize(8.25)
+Gui.F_Maint.frmMEval.create(frame)
+Gui.F_Maint.frmMEval.caption("Evaluation")
+Gui.F_Maint.frmMEval.size(5070,720)
+Gui.F_Maint.frmMEval.position(195,3255)
+Gui.F_Maint.frmMEval.Enabled(True)
+Gui.F_Maint.frmMEval.Visible(True)
+Gui.F_Maint.frmMEval.Zorder(0)
+Gui.F_Maint.frmMEval.FontName("Tahoma")
+Gui.F_Maint.frmMEval.FontSize(8.25)
+Gui.F_Maint.txtMEval.create(textbox,"",True,1905,300,0,105,270,True,0,"Arial",8,-2147483643,1)
+Gui.F_Maint.txtMEval.parent("frmMEval")
+Gui.F_Maint.txtMEval.maxLength(75)
+Gui.F_Maint.txtMEval.defaultvalue("")
+Gui.F_Maint.cmdMEvalBrw.create(button)
+Gui.F_Maint.cmdMEvalBrw.caption("^")
+Gui.F_Maint.cmdMEvalBrw.size(345,315)
+Gui.F_Maint.cmdMEvalBrw.position(2010,270)
+Gui.F_Maint.cmdMEvalBrw.parent("frmMEval")
+Gui.F_Maint.cmdMEvalBrw.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMEvalBrw.defaultvalue("")
+Gui.F_Maint.cmdMEvalBrw.tabstop(True)
+Gui.F_Maint.cmdMEvalBrw.tabindex(13)
+Gui.F_Maint.cmdMEvalBrw.Enabled(True)
+Gui.F_Maint.cmdMEvalBrw.Visible(True)
+Gui.F_Maint.cmdMEvalBrw.Zorder(0)
+Gui.F_Maint.cmdMEvalBrw.FontName("Tahoma")
+Gui.F_Maint.cmdMEvalBrw.FontSize(8.25)
+Gui.F_Maint.cmdMEvalSave.create(button)
+Gui.F_Maint.cmdMEvalSave.caption("Save")
+Gui.F_Maint.cmdMEvalSave.size(855,375)
+Gui.F_Maint.cmdMEvalSave.position(3090,225)
+Gui.F_Maint.cmdMEvalSave.parent("frmMEval")
+Gui.F_Maint.cmdMEvalSave.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMEvalSave.defaultvalue("")
+Gui.F_Maint.cmdMEvalSave.tabstop(True)
+Gui.F_Maint.cmdMEvalSave.tabindex(14)
+Gui.F_Maint.cmdMEvalSave.Enabled(True)
+Gui.F_Maint.cmdMEvalSave.Visible(True)
+Gui.F_Maint.cmdMEvalSave.Zorder(0)
+Gui.F_Maint.cmdMEvalSave.FontName("Tahoma")
+Gui.F_Maint.cmdMEvalSave.FontSize(8.25)
+Gui.F_Maint.cmdMEvalDel.create(button)
+Gui.F_Maint.cmdMEvalDel.caption("Delete")
+Gui.F_Maint.cmdMEvalDel.size(855,375)
+Gui.F_Maint.cmdMEvalDel.position(3990,225)
+Gui.F_Maint.cmdMEvalDel.parent("frmMEval")
+Gui.F_Maint.cmdMEvalDel.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMEvalDel.defaultvalue("")
+Gui.F_Maint.cmdMEvalDel.tabstop(True)
+Gui.F_Maint.cmdMEvalDel.tabindex(15)
+Gui.F_Maint.cmdMEvalDel.Enabled(True)
+Gui.F_Maint.cmdMEvalDel.Visible(True)
+Gui.F_Maint.cmdMEvalDel.Zorder(0)
+Gui.F_Maint.cmdMEvalDel.FontName("Tahoma")
+Gui.F_Maint.cmdMEvalDel.FontSize(8.25)
+Gui.F_Maint.frmMJob.create(frame)
+Gui.F_Maint.frmMJob.caption("Job Title")
+Gui.F_Maint.frmMJob.size(5070,720)
+Gui.F_Maint.frmMJob.position(195,60)
+Gui.F_Maint.frmMJob.Enabled(True)
+Gui.F_Maint.frmMJob.Visible(True)
+Gui.F_Maint.frmMJob.Zorder(0)
+Gui.F_Maint.frmMJob.FontName("Tahoma")
+Gui.F_Maint.frmMJob.FontSize(8.25)
+Gui.F_Maint.txtMJob.create(textbox,"",True,1905,300,0,105,270,True,0,"Arial",8,-2147483643,1)
+Gui.F_Maint.txtMJob.parent("frmMJob")
+Gui.F_Maint.txtMJob.maxLength(75)
+Gui.F_Maint.txtMJob.defaultvalue("")
+Gui.F_Maint.cmdMJobBrw.create(button)
+Gui.F_Maint.cmdMJobBrw.caption("^")
+Gui.F_Maint.cmdMJobBrw.size(345,315)
+Gui.F_Maint.cmdMJobBrw.position(2010,270)
+Gui.F_Maint.cmdMJobBrw.parent("frmMJob")
+Gui.F_Maint.cmdMJobBrw.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMJobBrw.defaultvalue("")
+Gui.F_Maint.cmdMJobBrw.tabstop(True)
+Gui.F_Maint.cmdMJobBrw.tabindex(1)
+Gui.F_Maint.cmdMJobBrw.Enabled(True)
+Gui.F_Maint.cmdMJobBrw.Visible(True)
+Gui.F_Maint.cmdMJobBrw.Zorder(0)
+Gui.F_Maint.cmdMJobBrw.FontName("Tahoma")
+Gui.F_Maint.cmdMJobBrw.FontSize(8.25)
+Gui.F_Maint.cmdMJobSave.create(button)
+Gui.F_Maint.cmdMJobSave.caption("Save")
+Gui.F_Maint.cmdMJobSave.size(855,375)
+Gui.F_Maint.cmdMJobSave.position(3090,225)
+Gui.F_Maint.cmdMJobSave.parent("frmMJob")
+Gui.F_Maint.cmdMJobSave.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMJobSave.defaultvalue("")
+Gui.F_Maint.cmdMJobSave.tabstop(True)
+Gui.F_Maint.cmdMJobSave.tabindex(2)
+Gui.F_Maint.cmdMJobSave.Enabled(True)
+Gui.F_Maint.cmdMJobSave.Visible(True)
+Gui.F_Maint.cmdMJobSave.Zorder(0)
+Gui.F_Maint.cmdMJobSave.FontName("Tahoma")
+Gui.F_Maint.cmdMJobSave.FontSize(8.25)
+Gui.F_Maint.cmdMJobDel.create(button)
+Gui.F_Maint.cmdMJobDel.caption("Delete")
+Gui.F_Maint.cmdMJobDel.size(855,375)
+Gui.F_Maint.cmdMJobDel.position(3990,225)
+Gui.F_Maint.cmdMJobDel.parent("frmMJob")
+Gui.F_Maint.cmdMJobDel.event(Click,ButtonRouter)
+Gui.F_Maint.cmdMJobDel.defaultvalue("")
+Gui.F_Maint.cmdMJobDel.tabstop(True)
+Gui.F_Maint.cmdMJobDel.tabindex(3)
+Gui.F_Maint.cmdMJobDel.Enabled(True)
+Gui.F_Maint.cmdMJobDel.Visible(True)
+Gui.F_Maint.cmdMJobDel.Zorder(0)
+Gui.F_Maint.cmdMJobDel.FontName("Tahoma")
+Gui.F_Maint.cmdMJobDel.FontSize(8.25)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+' Main, Unloading, General
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+V.Local.sStr.Declare
+	F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN, V.Ambient.PUser, V.Ambient.PPass)
+'Adding this here because, reasons
+	F.Intrinsic.String.Build("Cert/Proc{0}Number:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTCertProcNo.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Revision{0}Level:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTRevLev.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Date of{0}Training:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTTrainDate.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Days Until{0}Exp.", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTExp.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Expiration{0}Date:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTExpDate.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Level of{0}Accomplishment:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTLevAcc.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Effectiveness{0}of Training:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTEffect.Caption(V.Local.sStr)
+	F.Intrinsic.String.Build("Current EQ{0}Number:", V.Ambient.NewLine,V.Local.sStr)
+	Gui.F_Emp_Train.lblTEQnum.Caption(V.Local.sStr)
+
+	GUI.F_Emp_Train.tabx1.SetTab(0)
+	GUI.F_Emp_Train.cboTType.AddItem("Initial")
+	GUI.F_Emp_Train.cboTType.AddItem("Recertification")
+	GUI.F_Emp_Train.cboTType.Text("")
+
+	GUI.F_Emp_Train.cboTEffective.AddItem("Effective")
+	GUI.F_Emp_Train.cboTEffective.AddItem("Not Effective")
+	GUI.F_Emp_Train.cboTEffective.Text("")
+	
+	GUI.F_Maint..Visible(False)
+	GUI.F_Emp_Train..Show
+	gui.F_Emp_Train..ApplyTheme
+
+	Function.Intrinsic.Control.CallSub("SetAnchors")
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.Main.End
+
+Program.Sub.SetAnchors.Start
+Gui.F_Emp_Train.frm_left.Anchor(15)
+Gui.F_Emp_Train.frm_bInfo.Anchor(13)
+Gui.F_Emp_Train.tabx1.Anchor(15)
+Gui.F_Emp_Train.txtTJob.Anchor(13)
+Gui.F_Emp_Train.cmdTJobBrw.Anchor(9)
+Gui.F_Emp_Train.txtNotes.Anchor(13)
+Gui.F_Emp_Train.txtNoteDesc.Anchor(13)
+Gui.F_Emp_Train.gsgcTrain.Anchor(15)
+Gui.F_Emp_Train.gsgcNotes.Anchor(15)
+Gui.F_Emp_Train.cmdMaint.Anchor(6)
+Gui.F_Emp_Train.picPhoto.Anchor(9)
+Gui.F_Emp_Train.cmdUpdPic.Anchor(9)
+Gui.F_Emp_Train.lblPic.Anchor(9)
+Program.Sub.SetAnchors.End
+
+Program.Sub.SetAnchorsMaint.Start
+Gui.F_Maint.frmMTrainCertProc.Anchor(13)
+Gui.F_Maint.txtMCertProc.Anchor(13)
+Gui.F_Maint.cmdMCertProcBrw.Anchor(9)
+Gui.F_Maint.cmdMCertProcSave.Anchor(9)
+Gui.F_Maint.cmdMCertProcDel.Anchor(9)
+Gui.F_Maint.frmMCompany.Anchor(13)
+Gui.F_Maint.txtMCompany.Anchor(13)
+Gui.F_Maint.cmdMCompanyBrw.Anchor(9)
+Gui.F_Maint.cmdMCompSave.Anchor(9)
+Gui.F_Maint.cmdMCompDel.Anchor(9)
+Gui.F_Maint.frmMLevAccom.Anchor(13)
+Gui.F_Maint.txtMLevAccom.Anchor(13)
+Gui.F_Maint.cmdMLevAccomBrw.Anchor(9)
+Gui.F_Maint.cmdMLevAccomSave.Anchor(9)
+Gui.F_Maint.cmdMLevAccomDel.Anchor(9)
+Gui.F_Maint.frmMEmpEQ.Anchor(13)
+Gui.F_Maint.txtMEmpEq.Anchor(13)
+Gui.F_Maint.cmdMEmpEQBrw.Anchor(9)
+Gui.F_Maint.cmdMEmpEqSave.Anchor(9)
+Gui.F_Maint.cmdMEmpEqDel.Anchor(9)
+Gui.F_Maint.frmMEval.Anchor(13)
+Gui.F_Maint.txtMEval.Anchor(13)
+Gui.F_Maint.cmdMEvalBrw.Anchor(9)
+Gui.F_Maint.cmdMEvalSave.Anchor(9)
+Gui.F_Maint.cmdMEvalDel.Anchor(9)
+Gui.F_Maint.frmMJob.Anchor(13)
+Gui.F_Maint.txtMJob.Anchor(13)
+Gui.F_Maint.cmdMJobBrw.Anchor(9)
+Gui.F_Maint.cmdMJobSave.Anchor(9)
+Gui.F_Maint.cmdMJobDel.Anchor(9)
+Program.Sub.SetAnchorsMaint.End
+
+Program.Sub.F_Emp_Train_Unload.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	F.Intrinsic.Control.If(V.DataTable.dtJobInfo.Exists)
+		F.Data.DataTable.Close("dtJobInfo")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.DataTable.dtTraining.Exists)
+		F.Data.DataTable.Close("dtTraining")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!Con.Close
+	F.Intrinsic.Control.End
+
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+
+Program.Sub.F_Emp_Train_Unload.End
+
+Program.Sub.F_Maint_Unload.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	GUI.F_Maint.txtMCertProc.Text("")
+	GUI.F_Maint.txtMCompany.Text("")
+	GUI.F_Maint.txtMEmpEq.Text("")
+	GUI.F_Maint.txtMEval.Text("")
+	GUI.F_Maint.txtMJob.Text("")
+	GUI.F_Maint.txtMLevAccom.Text("")
+	GUI.F_Maint..Visible(False)
+	GUI.F_Emp_Train..Enabled(True)
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Gui.F_Emp_Train..AlwaysOnTop(True)
+
+
+Program.Sub.F_Maint_Unload.End
+
+' Routes F_Maint's Browse/Save/Delete and F_Emp_Train's Browse for the same fields.
+Program.Sub.ButtonRouter.Start
+Gui.F_Emp_Train..AlwaysOnTop(False)
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.bBrowse.Declare(Boolean)
+	V.Local.bSave.Declare(Boolean)
+	V.Local.bDelete.Declare(Boolean)
+	
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "brw", True, V.Local.bBrowse)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "save", True, V.Local.bSave)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "del", True, V.Local.bDelete)
+	
+	F.Intrinsic.Control.If(V.Local.bBrowse)
+		F.Intrinsic.Control.CallSub("BrowseHandler", "ControlName", V.Args.ControlName)
+		
+	F.Intrinsic.Control.ElseIf(V.Local.bSave)
+		F.Intrinsic.Control.CallSub("SaveHandler", "ControlName", V.Args.ControlName)
+		
+	F.Intrinsic.Control.ElseIf(V.Local.bDelete)
+		F.Intrinsic.Control.CallSub("DeleteHandler", "ControlName", V.Args.ControlName)
+		
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.ButtonRouter.End
+
+Program.Sub.BrowseHandler.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.bTrainForm.Declare(Boolean)
+	V.Local.bMaintForm.Declare(Boolean)
+	V.Local.sFormName.Declare(String)
+	V.Local.sTxtPrefix.Declare(String)
+	
+	V.Local.bJob.Declare(Boolean)
+	V.Local.bCertProc.Declare(Boolean)
+	V.Local.bCompany.Declare(Boolean)
+	V.Local.bLevAccom.Declare(Boolean)
+	V.Local.bEval.Declare(Boolean)
+	V.Local.bEmpEQ.Declare(Boolean)
+	V.Local.sType.Declare(String)
+	V.Local.sBrowserTitle.Declare(String)
+	V.Local.sColumnTitles.Declare(String)
+	V.Local.sTxtSuffix.Declare(String)
+	V.Local.iColumnWidths.Declare(Long)
+	
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	V.Local.sTxtFull.Declare(String)
+	
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "cmdT", True, V.Local.bTrainForm)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "cmdM", True, V.Local.bMaintForm)
+	
+	F.Intrinsic.Control.If(V.Local.bMaintForm)
+		V.Local.sFormName.Set("F_Maint")
+		V.Local.sTxtPrefix.Set("txtM")
+	F.Intrinsic.Control.ElseIf(V.Local.bTrainForm)
+		V.Local.sFormName.Set("F_Emp_Train")
+		V.Local.sTxtPrefix.Set("txtT")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "Job", 		True, V.Local.bJob)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "CertProc", 	True, V.Local.bCertProc)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "Company", 	True, V.Local.bCompany)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "LevAccom", 	True, V.Local.bLevAccom)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "Eval", 		True, V.Local.bEval)
+	F.Intrinsic.String.IsInString(V.Args.ControlName, "EmpEQ", 		True, V.Local.bEmpEQ)
+	
+	F.Intrinsic.Control.If(V.Local.bJob)
+	
+		V.Local.sType.Set("J")
+		V.Local.sBrowserTitle.Set("Select a job.")
+		V.Local.sColumnTitles.Set("Job")
+		V.Local.sTxtSuffix.Set("Job")
+	
+	F.Intrinsic.Control.ElseIf(V.Local.bCertProc)
+	
+		V.Local.sType.Set("T")
+		V.Local.sBrowserTitle.Set("Select a training certification / procedure.")
+		V.Local.sColumnTitles.Set("Certification / Procedure")
+		V.Local.sTxtSuffix.Set("CertProc")
+	
+	F.Intrinsic.Control.ElseIf(V.Local.bCompany)
+	
+		V.Local.sType.Set("C")
+		V.Local.sBrowserTitle.Set("Select a company.")
+		V.Local.sColumnTitles.Set("Company")
+		V.Local.sTxtSuffix.Set("Company")
+	
+	F.Intrinsic.Control.ElseIf(V.Local.bLevAccom)
+	
+		V.Local.sType.Set("L")
+		V.Local.sBrowserTitle.Set("Select a level of accomplishment.")
+		V.Local.sColumnTitles.Set("Level Of Accomplishment")
+		V.Local.sTxtSuffix.Set("LevAccom")
+	
+	F.Intrinsic.Control.ElseIf(V.Local.bEval)
+	
+		V.Local.sType.Set("E")
+		V.Local.sBrowserTitle.Set("Select an evaluation.")
+		V.Local.sColumnTitles.Set("Evaluation")
+		V.Local.sTxtSuffix.Set("Eval")
+	
+	F.Intrinsic.Control.ElseIf(V.Local.bEmpEQ)
+	
+		V.Local.sType.Set("Q")
+		V.Local.sBrowserTitle.Set("Select an employee EQ.")
+		V.Local.sColumnTitles.Set("Employee EQ")
+		V.Local.sTxtSuffix.Set("EmpEQ")
+	
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.iColumnWidths.Set(3000)	
+	
+	F.Intrinsic.String.Build("SELECT field_1 FROM gcg_3508_emp_trainF WHERE type = '{0}' ORDER BY field_1", V.Local.sType, V.Local.sSQL)
+	F.Intrinsic.UI.Browser(V.Local.sBrowserTitle, "Con", V.Local.sSQL, V.Local.sColumnTitles, V.Local.iColumnWidths, V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet, =, "***CANCEL***")
+	Gui.F_Maint..AlwaysOnTop(True)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("{0}{1}", V.Local.sTxtPrefix, V.Local.sTxtSuffix, V.Local.sTxtFull)
+	GUI.[V.Local.sFormName].[V.Local.sTxtFull].Text(V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Local.bTrainForm, =, True, "AND", V.Local.bJob, =, True)
+		f.Intrinsic.String.Build("SELECT EMPLOYEE FROM GCG_3508_EMP_TRAIN WHERE type = 'J' AND employee = '{1}'", V.Local.sRet, V.Screen.F_Emp_Train!txtEmpNum.Text, V.Local.sSQL)
+		f.Data.DataTable.CreateFromSQL("dtEmployeeJobCheck","con",v.Local.sSQL)
+		f.Intrinsic.Control.If(v.DataTable.dtEmployeeJobCheck.RowCount,>,0)
+			F.Intrinsic.String.Build("UPDATE gcg_3508_emp_train SET field_1 = '{0}' WHERE type = 'J' AND employee = '{1}'", V.Local.sRet, V.Screen.F_Emp_Train!txtEmpNum.Text, V.Local.sSQL)
+		f.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("INSERT INTO gcg_3508_emp_train (employee, type, field_1) VALUES ('{0}', 'J', '{1}')",V.Screen.F_Emp_Train!txtEmpNum.Text, V.Local.sRet, V.Local.sSQL)
+		f.Intrinsic.Control.EndIf
+		f.Data.DataTable.Close("dtEmployeeJobCheck")
+		
+		F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+		F.Intrinsic.String.Build("Job updated to {0} for {1}.", V.Local.sRet, V.Screen.F_Emp_Train!txtEmp.Text.Trim, V.Local.sRet)
+		F.Intrinsic.UI.Msgbox(V.Local.sRet)		
+	F.Intrinsic.Control.EndIf
+Gui.F_Maint..AlwaysOnTop(True)
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.BrowseHandler.End
+
+Program.Sub.SaveHandler.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sType.Declare(String)
+	V.Local.sValue.Declare(String)
+	V.Local.sTxtSuffix.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	F.Intrinsic.Control.SelectCase(V.Args.ControlName)
+	
+		F.Intrinsic.Control.Case("CMDMJOBSAVE")
+		
+			V.Local.sType.Set("J")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMJob.Text)
+			V.Local.sTxtSuffix.Set("Job")
+		
+		F.Intrinsic.Control.Case("CMDMCERTPROCSAVE")
+		
+			V.Local.sType.Set("T")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMCertProc.Text)
+			V.Local.sTxtSuffix.Set("CertProc")
+		
+		F.Intrinsic.Control.Case("CMDMCOMPSAVE")
+		
+			V.Local.sType.Set("C")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMCompany.Text)
+			V.Local.sTxtSuffix.Set("Company")
+		
+		F.Intrinsic.Control.Case("CMDMLEVACCOMSAVE")
+		
+			V.Local.sType.Set("L")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMLevAccom.Text)
+			V.Local.sTxtSuffix.Set("LevAccom")
+		
+		F.Intrinsic.Control.Case("CMDMEVALSAVE")
+		
+			V.Local.sType.Set("E")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMEval.Text)
+			V.Local.sTxtSuffix.Set("Eval")
+		
+		F.Intrinsic.Control.Case("CMDMEMPEQSAVE")
+		
+			V.Local.sType.Set("Q")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMEmpEq.Text)
+			V.Local.sTxtSuffix.Set("EmpEQ")
+	
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.If(V.Local.sValue.Trim, =, "")
+		F.Intrinsic.UI.Msgbox("Please enter a value to save.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("SELECT id FROM gcg_3508_emp_trainF WHERE type = '{0}' AND field_1 = '{1}'", V.Local.sType, V.Local.sValue.Trim, V.Local.sSQL)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet, <>, "")
+		F.Intrinsic.UI.Msgbox("This value already exists.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("INSERT INTO gcg_3508_emp_trainF (type, field_1) VALUES ('{0}', '{1}')", V.Local.sType, V.Local.sValue.Trim, V.Local.sSQL)
+	F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+	Gui.F_Maint..AlwaysOnTop(True)
+	GUI.F_Maint.txtM[V.Local.sTxtSuffix].Text("")
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.SaveHandler.End
+
+Program.Sub.DeleteHandler.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sType.Declare(String)
+	V.Local.sValue.Declare(String)
+	V.Local.sTxtSuffix.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	F.Intrinsic.Control.SelectCase(V.Args.ControlName)
+	
+		F.Intrinsic.Control.Case("CMDMJOBDEL")
+		
+			V.Local.sType.Set("J")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMJob.Text)
+			V.Local.sTxtSuffix.Set("Job")
+		
+		F.Intrinsic.Control.Case("CMDMCERTPROCDEL")
+		
+			V.Local.sType.Set("T")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMCertProc.Text)
+			V.Local.sTxtSuffix.Set("CertProc")
+		
+		F.Intrinsic.Control.Case("CMDMCOMPDEL")
+		
+			V.Local.sType.Set("C")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMCompany.Text)
+			V.Local.sTxtSuffix.Set("Company")
+		
+		F.Intrinsic.Control.Case("CMDMLEVACCOMDEL")
+		
+			V.Local.sType.Set("L")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMLevAccom.Text)
+			V.Local.sTxtSuffix.Set("LevAccom")
+		
+		F.Intrinsic.Control.Case("CMDMEVALDEL")
+		
+			V.Local.sType.Set("E")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMEval.Text)
+			V.Local.sTxtSuffix.Set("Eval")
+		
+		F.Intrinsic.Control.Case("CMDMEMPEQDEL")
+		
+			V.Local.sType.Set("Q")
+			V.Local.sValue.Set(V.Screen.F_Maint!txtMEmpEq.Text)
+			V.Local.sTxtSuffix.Set("EmpEQ")
+	
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.String.Build("SELECT id FROM gcg_3508_emp_trainF WHERE type = '{0}' AND field_1 = '{1}'", V.Local.sType, V.Local.sValue.Trim, V.Local.sSQL)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet, =, "", "OR", V.Local.sValue.Trim, =, "")
+		F.Intrinsic.UI.Msgbox("Please browse for or enter an existing value to delete. Case sensitive.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("DELETE FROM gcg_3508_emp_trainF WHERE type = '{0}' AND field_1 = '{1}'", V.Local.sType, V.Local.sValue.Trim, V.Local.sSQL)
+	F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+	Gui.F_Maint..AlwaysOnTop(True)
+	GUI.F_Maint.txtM[V.Local.sTxtSuffix].Text("")
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.DeleteHandler.End
+
+' Employee frame
+Program.Sub.cmdEmpBrw_Click.Start
+Gui.F_Emp_Train..AlwaysOnTop(False)
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sBrowserTitle.Declare(String)
+	V.Local.sColumnTitles.Declare(String)
+	V.Local.iColumnWidths.Declare(Long)
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	V.Local.sBrowserTitle.Set("Select an employee.")
+	F.Intrinsic.String.Split("Number*!*Name*!*Date_Hire*!*Shift*!*Department", "*!*", V.Local.sColumnTitles)
+	F.Intrinsic.String.Split("1000*!*3000*!*1000*!*500*!*1000", "*!*", V.Local.iColumnWidths)
+	V.Local.sSQL.Set("SELECT employee, name, date_hire, shift, dept_employee FROM v_employee_mstr ORDER BY employee")
+	
+	F.Intrinsic.UI.Browser(V.Local.sBrowserTitle, "Con", V.Local.sSQL, V.Local.sColumnTitles, V.Local.iColumnWidths, V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet, =, "***CANCEL***")
+'		F.Intrinsic.UI.Msgbox("No employee was selected.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.CallSub("ClearJobInfoTab")
+	F.Intrinsic.Control.CallSub("ClearTrainingTab")
+	
+	F.Intrinsic.String.Split(V.Local.sRet, "*!*", V.Local.sRet)
+	F.Intrinsic.String.Format(V.Local.sRet(2), "MM/DD/YYYY", V.Local.sRet(2))
+	GUI.F_Emp_Train.txtEmpNum.Text(V.Local.sRet(0))
+	GUI.F_Emp_Train.txtEmp.Text(V.Local.sRet(1))
+	GUI.F_Emp_Train.txtHireDate.Text(V.Local.sRet(2))
+	GUI.F_Emp_Train.txtShift.Text(V.Local.sRet(3))
+	GUI.F_Emp_Train.txtDep.Text(V.Local.sRet(4))
+	
+	F.Intrinsic.Control.CallSub("LoadTabs")
+	F.Intrinsic.Control.CallSub("LoadPicture")
+	
+	GUI.F_Emp_Train.cmdTJobBrw.Enabled(True)	
+	GUI.F_Emp_Train.cmdNoteSave.Enabled(True)
+	GUI.F_Emp_Train.cmdTCertProcBrw.Enabled(True)
+	GUI.F_Emp_Train.cmdTCompanyBrw.Enabled(True)
+	GUI.F_Emp_Train.cmdTLevAccomBrw.Enabled(True)
+	GUI.F_Emp_Train.cmdTEvalBrw.Enabled(True)
+	GUI.F_Emp_Train.cmdTEmpEQBrw.Enabled(True)
+	GUI.F_Emp_Train.cmdCertDoc.Enabled(True)
+	GUI.F_Emp_Train.cmdViewCertDoc.Enabled(True)
+	GUI.F_Emp_Train.cmdTSave.Enabled(True)
+	GUI.F_Emp_Train.cmdUpdPic.Enabled(True)
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdEmpBrw_Click.End
+
+Program.Sub.LoadTabs.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(string)
+	
+	F.Intrinsic.String.Build("SELECT field_1 FROM gcg_3508_emp_train WHERE type = 'J' AND employee = '{0}'", V.Screen.F_Emp_Train!txtEmpNum.Text, V.Local.sSQL)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Local.sRet, <>, "")
+		GUI.F_Emp_Train.txtTJob.Text(V.Local.sRet)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub("LoadGrid_JobInfo")
+	F.Intrinsic.Control.CallSub("LoadGrid_Training")
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.LoadTabs.End
+
+Program.Sub.LoadPicture.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	V.Local.bFileExists.Declare(Boolean)
+	V.Local.sDefaultPictureDir.Declare(String)
+	
+	F.Intrinsic.String.Build("SELECT field_1 FROM gcg_3508_emp_train WHERE type = 'P' AND employee = '{0}'", V.Screen.F_Emp_Train!txtEmpNum.Text, V.Local.sSQL)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Local.sRet, <>, "")
+	
+		F.Intrinsic.File.Exists(V.Local.sRet, V.Local.bFileExists)
+		F.Intrinsic.Control.If(V.Local.bFileExists)
+								
+			Function.Intrinsic.Control.CallSub("SetPicture","sFQN",v.Local.sRet)
+								
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("{0}\ART\header.bmp", V.Caller.GlobalDir, V.Local.sDefaultPictureDir)
+	Function.Intrinsic.Control.CallSub("SetPicture","sFQN",v.Local.sDefaultPictureDir)
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.LoadPicture.End
+
+Program.Sub.SetPicture.Start
+	v.Static.dMaxWt.Declare(Float,333.0)
+	v.Static.dMaxHt.Declare(Float,480.0)
+	
+	V.Local.sMetrics.Declare(String)
+	v.Local.dAspect.Declare(Float)
+	v.Local.iWt.Declare(Long)
+	v.Local.iHt.Declare(Long)
+	v.Local.iWtAdj.Declare(Long)
+	v.Local.iHtAdj.Declare(Long)
+	v.Local.iX.Declare(Long)
+	v.Local.iY.Declare(Long)
+						
+	Function.Intrinsic.UI.GetImageMetrics(v.Args.sFQN,V.Local.sMetrics)
+	Function.Intrinsic.String.Split(v.Local.sMetrics,"*!*",v.Local.sMetrics)
+	v.Local.iWt.Set(v.Local.sMetrics(0))
+	v.Local.iHt.Set(v.Local.sMetrics(1))
+	
+	' Get the height multiplier from the width vs max width
+	Function.Intrinsic.Control.If(v.Local.iWt,<,v.Static.dMaxWt)
+		v.Local.iWtAdj.Set(v.Local.iWt)
+	Function.Intrinsic.Control.Else
+		v.Local.iWtAdj.Set(v.Static.dMaxWt)
+	Function.Intrinsic.Control.EndIf
+				
+	Function.Intrinsic.Math.Div(v.Local.iWtAdj,v.Local.iWt,v.Local.dAspect)
+	Function.Intrinsic.Math.Mult(v.Local.iHt,v.Local.dAspect,v.Local.iHtAdj)
+	Function.Intrinsic.Control.If(v.Local.iHtAdj,>,v.Static.dMaxHt)
+		' Base on the height, not the width
+		Function.Intrinsic.Control.If(v.Local.iHt,<,v.Static.dMaxHt)
+			v.Local.iHtAdj.Set(v.Local.iHt)
+		Function.Intrinsic.Control.Else
+			v.Local.iHtAdj.Set(v.Static.dMaxHt)
+		Function.Intrinsic.Control.EndIf
+		
+		Function.Intrinsic.Math.Div(v.Local.iHtAdj,v.Local.iHt,v.Local.dAspect)
+		Function.Intrinsic.Math.Mult(v.Local.iWt,v.Local.dAspect,v.Local.iWtAdj)
+		
+	Function.Intrinsic.Control.Else
+		' Use the width based values
+		
+	Function.Intrinsic.Control.EndIf
+	
+	Function.Intrinsic.Math.Mult(v.Local.iWtAdj,15,v.Local.iWtAdj)
+	Function.Intrinsic.Math.Mult(v.Local.iHtAdj,15,v.Local.iHtAdj)
+	
+	gui.F_Emp_Train.picPhoto.Size(v.Local.iWtAdj,v.Local.iHtAdj)
+	
+	Function.Intrinsic.Math.Sub(v.Screen.F_Emp_Train.Width,v.Local.iWtAdj,375,v.Local.iX)
+	gui.F_Emp_Train.lblPic.Position(v.Local.iX,210)
+	Function.Intrinsic.Math.Add(v.Screen.F_Emp_Train!lblPic.Top,270,v.Local.iY)
+	gui.F_Emp_Train.picPhoto.Position(v.Local.iX,v.Local.iY)
+	
+	Function.Intrinsic.Math.Add(v.Local.iHtAdj,v.Local.iY,150,v.Local.iY)
+	gui.F_Emp_Train.cmdUpdPic.Position(v.Local.iX,v.Local.iY)
+	
+	Function.Intrinsic.Math.Sub(v.Local.iX,105,v.Local.iX)
+	gui.F_Emp_Train.frm_left.Size(v.Local.iX,v.Screen.F_Emp_Train!frm_left.Height)
+	
+	GUI.F_Emp_Train.picPhoto.Picture(v.Args.sFQN)
+Program.Sub.SetPicture.End
+
+' Job Info tab
+Program.Sub.LoadGrid_JobInfo.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sSQL.Declare(String)
+	
+	F.Intrinsic.Control.If(V.DataTable.dtJobInfo.Exists)
+		F.Data.DataTable.Close("dtJobInfo")
+	F.Intrinsic.Control.EndIf
+	
+	'F.Intrinsic.UI.InvokeWaitDialog("Loading job info grid...")
+	GUI.F_Emp_Train.gsgcNotes.SuspendLayout
+	
+		V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+		F.Intrinsic.String.Build("SELECT ISNULL(field_2, '') AS Date, ISNULL(field_1, '') AS Description, LEFT(ISNULL(field_3, ''), 150) AS Notes FROM gcg_3508_emp_train WHERE type = 'D' AND employee = '{0}' ORDER BY Date DESC", V.Local.sEmpNum, V.Local.sSQL)
+		F.Data.DataTable.CreateFromSQL("dtJobInfo", "Con", V.Local.sSQL, True)
+		
+		GUI.F_Emp_Train.gsgcNotes.DataSource("dtJobInfo")
+		
+		F.Intrinsic.Control.CallSub("SetColumnProperties_JobInfo")
+		
+	GUI.F_Emp_Train.gsgcNotes.ResumeLayout
+	'F.Intrinsic.UI.CloseWaitDialog
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.LoadGrid_JobInfo.End
+
+Program.Sub.SetColumnProperties_JobInfo.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	GUI.F_Emp_Train.gsgcNotes.SetGridviewProperty("dtJobInfo", "Editable", "False")
+	
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Date", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Description", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Notes", "HeaderFontBold", "True")
+	
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Date", "HeaderHAlignment", "center")
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Date", "CellHAlignment", "center")
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Date", "DisplayCustomDatetime", "d")
+	
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Date", "MinWidth", "75")
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Description", "MinWidth", "200")
+	GUI.F_Emp_Train.gsgcNotes.SetColumnProperty("dtJobInfo", "Notes", "MinWidth", "1000")
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.SetColumnProperties_JobInfo.End
+
+Program.Sub.ClearJobInfoTab.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	GUI.F_Emp_Train.txtNoteDesc.Text("")
+	GUI.F_Emp_Train.txtNotes.Text("")
+	GUI.F_Emp_Train.dtpNoteDate.Value(V.Ambient.Date)
+	
+	GUI.F_Emp_Train.cmdNoteDel.Enabled(False)
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.ClearJobInfoTab.End
+
+Program.Sub.cmdNoteSave_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sEmpNum.Declare(string)
+	V.Local.dDate.Declare(Date)
+	V.Local.sSQL.Declare(String)
+	
+	V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+	V.Local.dDate.Set(V.Screen.F_Emp_Train!dtpNoteDate.Value)
+	
+	F.Intrinsic.String.Build("Select * FROM GCG_3508_Emp_Train WHERE TYPE = 'D' AND EMPLOYEE = '{0}' AND FIELD_2 = '{1}'", V.Local.sEmpNum, V.Local.dDate.PervasiveDate, V.Local.sSQL)
+	F.ODBC.connection!Con.OpenLocalRecordsetRW("rstEmpNote", V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.Con!rstEmpNote.EOF, =, True)
+		F.ODBC.Con!rstEmpNote.AddNew
+		F.ODBC.Con!rstEmpNote.Set!EMPLOYEE(V.Screen.F_Emp_Train!txtEmpNum.Text)
+		F.ODBC.Con!rstEmpNote.Set!TYPE("D")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Con!rstEmpNote.Set!FIELD_1(V.Screen.F_Emp_Train!txtNoteDesc.Text)
+	F.ODBC.Con!rstEmpNote.Set!FIELD_2(V.Local.dDate.PervasiveDate)
+	F.ODBC.Con!rstEmpNote.Set!FIELD_3(V.Screen.F_Emp_Train!txtNotes.Text)
+	F.ODBC.Con!rstEmpNote.Update
+	F.ODBC.Con!rstEmpNote.Close
+	
+	F.Intrinsic.Control.CallSub("ClearJobInfoTab")
+	F.Intrinsic.Control.CallSub("LoadGrid_JobInfo")
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdNoteSave_Click.End
+
+Program.Sub.cmdNoteDel_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sEmpNum.Declare(String)
+	V.Local.dDate.Declare(Date)
+	V.Local.sSQL.Declare(String)
+	
+	V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+	V.Local.dDate.Set(V.Screen.F_Emp_Train!dtpNoteDate.Value)
+	
+	F.Intrinsic.String.Build("Select * FROM GCG_3508_Emp_Train WHERE TYPE = 'D' AND EMPLOYEE = '{0}' AND FIELD_2 = '{1}'", V.Local.sEmpNum, V.Local.dDate.PervasiveDate, V.Local.sSQL)
+	F.ODBC.connection!Con.OpenLocalRecordsetRW("rstEmpNote", V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.Con!rstEmpNote.EOF, =, False)
+		F.ODBC.Con!rstEmpNote.Delete
+		F.ODBC.Con!rstEmpNote.Update
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Con!rstEmpNote.Close
+	
+	F.Intrinsic.Control.CallSub("ClearJobInfoTab")
+	F.Intrinsic.Control.CallSub("LoadGrid_JobInfo")
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdNoteDel_Click.End
+
+Program.Sub.gsgcNotes_RowCellClick.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.dDate.Declare(Date)
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+	V.Local.dDate.Set(V.DataTable.dtJobInfo(V.Args.RowIndex).Date!FieldVal)
+	
+	F.Intrinsic.String.Build("SELECT field_1, field_2, field_3 FROM gcg_3508_emp_train WHERE type = 'D' AND employee = '{0}' AND field_2 = '{1}'", V.Local.sEmpNum, V.Local.dDate.PervasiveDate, V.Local.sSQL)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet, <>, "")
+	
+		F.Intrinsic.Control.CallSub("ClearJobInfoTab")
+		
+		F.Intrinsic.String.Split(V.Local.sRet, "*!*", V.Local.sRet)
+		GUI.F_Emp_Train.txtNoteDesc.Text(V.Local.sRet(0))
+		GUI.F_Emp_Train.dtpNoteDate.Value(V.Local.sRet(1))
+		GUI.F_Emp_Train.txtNotes.Text(V.Local.sRet(2))
+		
+		GUI.F_Emp_Train.cmdNoteDel.Enabled(True)
+	
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.gsgcNotes_RowCellClick.End
+
+' Training tab
+Program.Sub.LoadGrid_Training.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sSQL.Declare(String)
+	
+	F.Intrinsic.Control.If(V.DataTable.dtTraining.Exists)
+		F.Data.DataTable.Close("dtTraining")
+	F.Intrinsic.Control.EndIf
+	
+	'F.Intrinsic.UI.InvokeWaitDialog("Loading training grid...")
+	GUI.F_Emp_Train.gsgcTrain.SuspendLayout
+	
+		V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+		F.Intrinsic.String.Build("SELECT field_1 AS Type, field_4 AS Training, field_5 AS Company, field_6 AS 'Cert/Proc_No', field_7 AS Rev_Level, field_2 AS Date_Trained, field_8 AS Expiration, field_9 AS Date_Expire, field_10 AS Level_Accomp, field_11 AS Trainer, field_12 AS Effectiveness, field_13 AS Evaluation, field_14 AS Current_EQ, field_15 AS Document, ID FROM gcg_3508_emp_train a WHERE a.type = 'T' AND employee = '{0}' ORDER BY Type DESC", V.Local.sEmpNum, V.Local.sSQL)
+		F.Data.DataTable.CreateFromSQL("dtTraining", "Con", V.Local.sSQL, True)
+		
+		GUI.F_Emp_Train.gsgcTrain.DataSource("dtTraining")
+		
+		F.Intrinsic.Control.CallSub("SetColumnProperties_Training")
+		
+	GUI.F_Emp_Train.gsgcTrain.ResumeLayout	
+	'F.Intrinsic.UI.CloseWaitDialog	
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.LoadGrid_Training.End
+
+Program.Sub.SetColumnProperties_Training.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	GUI.F_Emp_Train.gsgcTrain.SetGridviewProperty("dtTraining", "Editable", "False")
+	
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "ID", "Visible", "False")
+	
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Trained", "DisplayCustomDatetime", "d")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Expire", "DisplayCustomDatetime", "d")
+	
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Trained", "HeaderHAlignment", "center")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Trained", "CellHAlignment", "center")
+	
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Expire", "HeaderHAlignment", "center")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Expire", "CellHAlignment", "center")
+	
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Type", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Training", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Company", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Cert/Proc_No", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Rev_Level", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Trained", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Expiration", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Expire", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Level_Accomp", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Trainer", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Effectiveness", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Evaluation", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Current_EQ", "HeaderFontBold", "True")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Document", "HeaderFontBold", "True")
+	
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Type", "MinWidth", "75")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Training", "MinWidth", "150")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Company", "MinWidth", "150")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Cert/Proc_No", "MinWidth", "50")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Rev_Level", "MinWidth", "50")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Trained", "MinWidth", "75")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Expiration", "MinWidth", "50")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Date_Expire", "MinWidth", "75")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Level_Accomp", "MinWidth", "100")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Trainer", "MinWidth", "150")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Effectiveness", "MinWidth", "100")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Evaluation", "MinWidth", "75")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Current_EQ", "MinWidth", "50")
+	GUI.F_Emp_Train.gsgcTrain.SetColumnProperty("dtTraining", "Document", "MinWidth", "100")
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.SetColumnProperties_Training.End
+
+Program.Sub.ClearTrainingTab.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	GUI.F_Emp_Train.cboTType.Text("")
+	GUI.F_Emp_Train.txtTCertProc.Text("")
+	GUI.F_Emp_Train.txtTCompany.Text("")
+	GUI.F_Emp_Train.txtTCertProcNo.Text("")
+	GUI.F_Emp_Train.txtTRevLev.Text("")
+	GUI.F_Emp_Train.txtTExp.Text("")
+	GUI.F_Emp_Train.txtTLevAccom.Text("")
+	GUI.F_Emp_Train.txtTTrainers.Text("")
+	GUI.F_Emp_Train.cboTEffective.Text("")
+	GUI.F_Emp_Train.txtTEval.Text("")
+	GUI.F_Emp_Train.txtTEmpEQ.Text("")
+	GUI.F_Emp_Train.txtTDocOrigin.Text("")
+	GUI.F_Emp_Train.txtCertDoc.Text("")
+	GUI.F_Emp_Train.dtpTTrain.Value(V.Ambient.Date)
+	GUI.F_Emp_Train.dtpTExpDate.Value(V.Ambient.Date)
+	GUI.F_Emp_Train.cmdViewCertDoc.BackColor(-2147483633)
+	GUI.F_Emp_Train.txtTID.Text("")
+	
+	GUI.F_Emp_Train.cmdTDel.Enabled(False)
+	
+	F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.ClearTrainingTab.End
+
+Program.Sub.txtTExp_LostFocus.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.fDays.Declare(Float)
+	V.Local.dDateTraining.Declare(Date)
+	V.Local.dDateExpire.Declare(Date)
+	
+	' txtTExp is set to only accept unsigned integers so no validation is necessary.
+	V.Local.dDateTraining.Set(V.Screen.F_Emp_Train!dtpTTrain.Value)
+	F.Intrinsic.Date.DateAdd("D", V.Screen.F_Emp_Train!txtTExp.Text, V.Local.dDateTraining, V.Local.dDateExpire)
+	GUI.F_Emp_Train.dtpTExpDate.Value(V.Local.dDateExpire)
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.txtTExp_LostFocus.End
+
+Program.Sub.dtpTExpDate_Change.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.dDateTraining.Declare(Date)
+	V.Local.dDateExpire.Declare(Date)
+	V.Local.fDateDiff.Declare(Float)
+	
+	V.Local.dDateTraining.Set(V.Screen.F_Emp_Train!dtpTTrain.Value)
+	V.Local.dDateExpire.Set(V.Screen.F_Emp_Train!dtpTExpDate.Value)
+	
+	F.Intrinsic.Control.If(V.Local.dDateExpire, <, V.Local.dDateTraining)
+		F.Intrinsic.UI.Msgbox("Please enter a valid expiration date.")
+		GUI.F_Emp_Train.dtpTExpDate.Value(V.Local.dDateTraining)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Date.DateDiff("D", V.Local.dDateTraining, V.Local.dDateExpire, V.Local.fDateDiff)
+	GUI.F_Emp_Train.txtTExp.Text(V.Local.fDateDiff)
+		
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.dtpTExpDate_Change.End
+
+Program.Sub.cmdDocOrigin_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sPath.Declare(String)
+	
+	F.Intrinsic.UI.ShowOpenFileDialog("" ,"" , "C:\", V.Local.sPath)
+	F.Intrinsic.Control.If(V.Local.sPath, <>, "***CANCEL***")
+		GUI.F_Emp_Train.txtCertDoc.Text(V.Local.sPath)
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdDocOrigin_Click.End
+
+Program.Sub.cmdViewCertDoc_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.bFileExists.Declare(Boolean)
+	V.Local.iHandle.Declare(Long) 
+	V.Local.sPath.Declare(String)
+	
+	V.Local.sPath.Set(V.Screen.F_Emp_Train!txtCertDoc.Text)
+	F.Intrinsic.Control.If(V.Local.sPath, <>, "")
+		
+		F.Intrinsic.File.Exists(V.Local.sPath, V.Local.bFileExists)
+		F.Intrinsic.Control.If(V.Local.bFileExists)
+			F.Intrinsic.Task.ShellExec(V.Local.iHandle, "Open", V.Local.sPath, "", "", 1)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.UI.Msgbox("File does not exist. Please enter or browse for the full path.")
+		F.Intrinsic.Control.EndIf	
+		
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdViewCertDoc_Click.End
+
+Program.Sub.cmdTSave_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+	
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sDBRowID.Declare(string)
+	V.Local.sSQL.Declare(String)
+
+	V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+	V.Local.sDBRowID.Set(V.Screen.F_Emp_Train!txtTID.Text)
+	
+	F.Intrinsic.String.Build("Select * FROM GCG_3508_Emp_Train WHERE TYPE = 'T' AND EMPLOYEE = '{0}' AND ID = '{1}'", V.Local.sEmpNum, V.Local.sDBRowID, V.Local.sSQL)
+	F.ODBC.connection!Con.OpenLocalRecordsetRW("rstEmpTrain", V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.Con!rstEmpTrain.EOF, =, True)
+		F.ODBC.Con!rstEmpTrain.AddNew
+		F.ODBC.Con!rstEmpTrain.Set!EMPLOYEE(V.Local.sEmpNum)
+		F.ODBC.Con!rstEmpTrain.Set!TYPE("T")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_1(V.Screen.F_Emp_Train!cboTType.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_4(V.Screen.F_Emp_Train!txtTCertProc.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_5(V.Screen.F_Emp_Train!txtTCompany.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_6(V.Screen.F_Emp_Train!txtTCertProcNo.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_2(V.Screen.F_Emp_Train!dtpTTrain.Value.PervasiveDate)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_7(V.Screen.F_Emp_Train!txtTRevLev.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_8(V.Screen.F_Emp_Train!txtTExp.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_9(V.Screen.F_Emp_Train!dtpTExpDate.Value.PervasiveDate)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_10(V.Screen.F_Emp_Train!txtTLevAccom.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_11(V.Screen.F_Emp_Train!txtTTrainers.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_12(V.Screen.F_Emp_Train!cboTEffective.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_13(V.Screen.F_Emp_Train!txtTEval.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_14(V.Screen.F_Emp_Train!txtTEmpEQ.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_15(V.Screen.F_Emp_Train!txtTDocOrigin.Text)
+	F.ODBC.Con!rstEmpTrain.Set!FIELD_16(V.Screen.F_Emp_Train!txtCertDoc.Text)
+	
+	F.ODBC.Con!rstEmpTrain.Update
+	F.ODBC.Con!rstEmpTrain.Close
+	
+	F.Intrinsic.Control.CallSub("ClearTrainingTab")
+	F.Intrinsic.Control.CallSub("LoadGrid_Training")
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdTSave_Click.End
+
+Program.Sub.cmdTDel_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sDBRowID.Declare(String)
+	V.Local.sSQL.Declare(String)
+	
+	V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+	V.Local.sDBRowID.Set(V.Screen.F_Emp_Train!txtTID.Text)
+	
+	F.Intrinsic.Control.If(V.Local.sDBRowID, =, "")
+		F.Intrinsic.UI.Msgbox("Please select a row from the grid below to delete.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("SELECT * FROM gcg_3508_emp_train WHERE TYPE = 'T' AND EMPLOYEE = '{0}' AND ID = '{1}'", V.Local.sEmpNum, V.Local.sDBRowID, V.Local.sSQL)
+	F.ODBC.connection!Con.OpenLocalRecordsetRW("rstDelEmpTrain", V.Local.sSQL)
+	
+	F.Intrinsic.Control.If(V.ODBC.Con!rstDelEmpTrain.EOF, =, False)
+		F.ODBC.Con!rstDelEmpTrain.Delete
+		F.ODBC.Con!rstDelEmpTrain.Update
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Con!rstDelEmpTrain.Close
+	
+	F.Intrinsic.Control.CallSub("ClearTrainingTab")
+	F.Intrinsic.Control.CallSub("LoadGrid_Training")
+
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdTDel_Click.End
+
+Program.Sub.gsgcTrain_RowCellClick.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sID.Declare(String)
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	V.Local.sFile.Declare(String)
+	V.Local.bFileExists.Declare(Boolean)
+	
+	V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+	V.Local.sID.Set(V.DataTable.dtTraining(V.Args.RowIndex).ID!FieldVal)
+	
+	F.Intrinsic.String.Build("SELECT field_1, field_2, field_4, field_5, field_6, field_7, field_8, field_9, field_10, field_11, field_12, field_13, field_14, field_15, field_16, ID FROM gcg_3508_emp_train WHERE type = 'T' AND employee = '{0}' AND ID = '{1}'", V.Local.sEmpNum, V.Local.sID, V.Local.sSQL)
+	F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Local.sRet, <>, "")
+	
+		F.Intrinsic.Control.CallSub("ClearTrainingTab")
+		
+		' Index:	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		' Field:	1	2	4	5	6	7	8	9	10	11	12	13	14	15	16	id
+		F.Intrinsic.String.Split(V.Local.sRet, "*!*", V.Local.sRet)
+		GUI.F_Emp_Train.cboTType.Text(V.Local.sRet(0))
+		GUI.F_Emp_Train.dtpTTrain.Value(V.Local.sRet(1))
+		GUI.F_Emp_Train.txtTCertProc.Text(V.Local.sRet(2))
+		GUI.F_Emp_Train.txtTCompany.Text(V.Local.sRet(3))
+		GUI.F_Emp_Train.txtTCertProcNo.Text(V.Local.sRet(4))
+		GUI.F_Emp_Train.txtTRevLev.Text(V.Local.sRet(5))
+		GUI.F_Emp_Train.txtTExp.Text(V.Local.sRet(6))
+		GUI.F_Emp_Train.dtpTExpDate.Value(V.Local.sRet(7))
+		GUI.F_Emp_Train.txtTLevAccom.Text(V.Local.sRet(8))
+		GUI.F_Emp_Train.txtTTrainers.Text(V.Local.sRet(9))
+		GUI.F_Emp_Train.cboTEffective.Text(V.Local.sRet(10))
+		GUI.F_Emp_Train.txtTEval.Text(V.Local.sRet(11))
+		GUI.F_Emp_Train.txtTEmpEQ.Text(V.Local.sRet(12))
+		GUI.F_Emp_Train.txtTDocOrigin.Text(V.Local.sRet(13))
+		GUI.F_Emp_Train.txtCertDoc.Text(V.Local.sRet(14))
+		GUI.F_Emp_Train.txtTID.Text(V.Local.sRet(15))
+		
+		GUI.F_Emp_Train.cmdTDel.Enabled(True)
+	
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.sFile.Set(V.Local.sRet(14))
+	F.Intrinsic.File.Exists(V.Local.sFile, V.Local.bFileExists)
+	F.Intrinsic.Control.If(V.Local.bFileExists)
+		GUI.F_Emp_Train.cmdViewCertDoc.BackColor(V.Color.Green)
+	F.Intrinsic.Control.Else
+		GUI.F_Emp_Train.cmdViewCertDoc.BackColor(V.Color.Red)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.gsgcTrain_RowCellClick.End
+
+' Picture and Field Maint. button
+Program.Sub.cmdUpdPic_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	V.Local.sFile.Declare(String)
+	V.Local.sEmpNum.Declare(String)
+	V.Local.sSQL.Declare(string)
+	V.Local.sRet.Declare(String)
+	
+	F.Intrinsic.UI.ShowOpenFileDialog("", "", "", V.Local.sFile)
+	
+	F.Intrinsic.Control.If(V.Local.sFile, <>, "***CANCEL***")
+	
+		V.Local.sFile.Set(V.Local.sFile.LCase)
+		F.Intrinsic.Control.If(V.Local.sFile.right3, =, "png", "OR", V.Local.sFile.right3, =, "bmp", V.Local.sFile.right3, =, "jpg")
+		
+			V.Local.sEmpNum.Set(V.Screen.F_Emp_Train!txtEmpNum.Text)
+			F.Intrinsic.String.Build("SELECT * FROM gcg_3508_emp_train WHERE type = 'P' AND employee = '{0}'", V.Local.sEmpNum, V.Local.sSQL)
+			F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+			
+			F.Intrinsic.Control.If(V.Local.sRet, <>, "")
+				F.Intrinsic.String.Build("UPDATE gcg_3508_emp_train SET field_1 = '{0}' WHERE type = 'P' AND employee = '{1}'", V.Local.sFile, V.Local.sEmpNum, V.Local.sSQL)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("INSERT INTO gcg_3508_emp_train (employee, type, field_1) VALUES ('{0}', 'P', '{1}')", V.Local.sEmpNum, V.Local.sFile, V.Local.sSQL)
+			F.Intrinsic.Control.EndIf
+			
+			F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+			
+			Function.Intrinsic.Control.CallSub("SetPicture","sFQN",v.Local.sFile)
+			
+		F.Intrinsic.Control.Else
+			F.Intrinsic.UI.Msgbox("Please select a valid file type (PNG, BMP, JPG).")
+		F.Intrinsic.Control.EndIf
+		
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdUpdPic_Click.End
+
+Program.Sub.cmdMaint_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+	GUI.F_Maint..Visible(True)
+	Gui.F_Maint..AlwaysOnTop(True)
+	Function.Intrinsic.Control.CallSub("SetAnchorsMaint")
+	GUI.F_Emp_Train..Enabled(False)
+	GUI.F_Maint.txtMJob.SetFocus
+	
+F.Intrinsic.Control.Catch
+
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Ambient.ScriptPath, V.Ambient.Newline, V.Ambient.CurrentSubroutine, V.Ambient.ErrorNumber, V.Ambient.ErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+    F.Intrinsic.UI.MsgBox(V.Local.sError)
+    F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdMaint_Click.End
+
+' Other
+
+Program.Sub.Comments.Start
+${$0$}$GAB_EMP_Train$}$Strider$}$7/20/2015$}$False
+${$2$}$$}$$}$1$}$4$}$GCG_EMP_TRAIN_CERT$}$10/6/2015 2:55:48 PM$}$This stores all of the fields from notes and training
+${$2$}$$}$$}$0$}$4$}$GCG_EMP_TRAINF_CERT$}$10/6/2015 2:54:49 PM$}$This stores all of the fields added from the maintenance screen and used in the browsers and ddls
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$Additional information can be added for Employee like Picture, Job Info, Notes and Trainings.
+${$5$}$2.0.0.0$}$2
+${$6$}$dhughes$}$20240131120649901$}$c2B0VQGdJshzQXwjoX6JDhriKzL/P++DmPkbnLzdcblXFzuqXje4UCSu+ZEFjCo5MVy1jLklxUw=
+Program.Sub.Comments.End
